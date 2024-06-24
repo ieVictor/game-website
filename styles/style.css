@@ -82,3 +82,20 @@ a {
     border-color: var(--text-default-color);
     transition: .5s ease;
 }
+
+.rounded-button {
+    padding: .55rem 2rem;
+    background: linear-gradient(-89deg, #FA8305, #FB9E3C);
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5rem;
+}
+
+.rounded-button:hover {
+    border-style: solid;
+    border-color: var(--text-default-color);
+    filter: brightness(.95);
+    border-width: .2px;
+    transition: .5 ease;
+}
