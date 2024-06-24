@@ -2,22 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--text-default-color);
     font-family: var(--font-family-default);
 }
 
+body {
+    background: var(--background-gradient-color);
+    height: 100vh;
+}
+
 a {
-    color: black;
+    color: var(--text-default-color);
     text-decoration: none;
 }
 
 .app {
-    margin: 3rem 3.5rem;
-    max-width: 100vw;
-    max-height: 100vh;    
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 100vw;  
 }
 
 .navbar {
     display: flex;
+    padding: 3rem 3.5rem 0 3rem;
     width: 100%;
     align-items: center;
     justify-content: space-between;
