@@ -65,3 +65,20 @@ a {
     color: var(--text-secondary-color);
     transition: .5s ease;
 }
+
+.squared-button {
+    cursor: pointer;
+    font-size: 13px;
+    background-color: var(--button-background-color);
+    border-style: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+}
+
+.squared-button:hover {
+    border-style: solid;
+    filter: brightness(0.95);
+    border-width: .2px;
+    border-color: var(--text-default-color);
+    transition: .5s ease;
+}
