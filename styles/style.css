@@ -4,7 +4,32 @@ body {
     margin: 0;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .app {
     width: 100vw;
     height: 100vh;    
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-itens {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navbar-itens ul {
+    gap: 5rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
 }
