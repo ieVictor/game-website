@@ -1,6 +1,8 @@
 :root {
     --background-gradient-color: linear-gradient(to bottom, #39289F, #422F9C);
     --text-default-color: white;
+    --text-secondary-color: #FA9021;
+    --text-tertiary-color: #22185c;
     
     --button-background-color: #FA9021;
     --button-background-darker-color: #DC7000
