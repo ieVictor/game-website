@@ -9,11 +9,30 @@
 body {
     background: var(--background-gradient-color);
     height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100%;
 }
 
 a {
     color: var(--text-default-color);
     text-decoration: none;
+}
+
+img {
+    overflow: hidden;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0%;
+    left: 40%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -9999;
 }
 
 .app {
@@ -27,6 +46,7 @@ a {
     display: flex;
     padding: 3rem 3.5rem 0 3rem;
     width: 100%;
+    z-index: 1000;
     align-items: center;
     justify-content: space-between;
 }
@@ -90,6 +110,7 @@ a {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5rem;
+    width: fit-content;
 }
 
 .rounded-button:hover {
@@ -98,4 +119,28 @@ a {
     filter: brightness(.95);
     border-width: .2px;
     transition: .5 ease;
+}
+
+section .container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 4rem 8rem;
+    justify-content: space-between;
+}
+
+section .section-side {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    width: 35%;
+
+}
+
+section .section-side h1 {
+    font-size: 2.5rem;
+}
+ 
+section .section-side span {
+    font-size: 1rem;
 }
