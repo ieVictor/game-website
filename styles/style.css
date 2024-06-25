@@ -26,14 +26,6 @@ img {
     overflow: hidden;
 }
 
-.absolute {
-    position: absolute;
-    bottom: 0%;
-    left: 40%;
-    overflow: hidden;
-    pointer-events: none;
-    z-index: -9999;
-}
 
 .app {
     width: 100%;
@@ -121,26 +113,33 @@ img {
     transition: .5 ease;
 }
 
+.absolute {
+    position: absolute;
+    top: 0px;
+    right: -100px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+}
+
 section .container {
     display: flex;
     flex-direction: row;
-    position: relative;
     padding: 4rem 8rem;
     justify-content: space-between;
 }
 
 section .section-side {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     flex-direction: column;
     width: 35%;
-
 }
 
 section .section-side h1 {
     font-size: 2.5rem;
 }
- 
+
 section .section-side span {
     font-size: 1rem;
 }
