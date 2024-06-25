@@ -8,22 +8,19 @@
 
 body {
     background: var(--background-gradient-color);
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 main {
     width: 100%;
     height: 100%;
+    padding: 8.25rem 8.25rem 0rem 8.25rem;
 }
 
 a {
     color: var(--text-default-color);
     text-decoration: none;
-}
-
-img {
-    overflow: hidden;
 }
 
 .app {
@@ -36,23 +33,22 @@ img {
 .absolute {
     position: absolute;
     top: 0px;
-    right: -100px;
-    overflow: hidden;
+    right: -115px;
     pointer-events: none;
     z-index: -1;
 }
 
-section .container {
-    flex-direction: row;
-    padding: 4rem 8rem;
-    justify-content: start;
+section.first-section {
+    height: 88vh;
 }
 
 section .section-left {
     display: flex;
-    gap: 3.125rem;
+    align-items: start;
     flex-direction: column;
-    width: 511px;
+    gap: 3.125rem;
+    width: fit-content;
+    height: 100%;
 }
 
 section .section-left .section-text {
@@ -62,9 +58,18 @@ section .section-left .section-text {
     width: fit-content;
 }
 
+.section-text .section-title {
+    display: flex;
+    flex-direction: column;
+    line-height: 155.2%;
+    gap: 1.063rem;
+    width: fit-content;
+}
+
+
 section .section-left h1 {
     width: 25.313rem;
-    font-size: 2.5rem;
+    font-size: 3.125rem;
     line-height: 155.2%;
 }
 
@@ -75,7 +80,8 @@ section .section-left h2 {
 }
 
 section .section-left span {
+    font-weight: 500;
     font-size: 1rem;
     line-height: 200%;
-    width: 100%;
+    width: 32.938rem;
 }
