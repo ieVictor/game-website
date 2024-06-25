@@ -1,10 +1,9 @@
 @import './utilities/colors.css';
+@import './utilities/fonts.css';
+@import './utilities/layout.css';
 
 @import './components/navbar.css';
 @import './components/button.css';
-
-@import './utilities/fonts.css';
-@import './utilities/colors.css';
-@import './utilities/layout.css';
+@import './components/list-item.css';
 
 @import './pages/home.css';
