@@ -1,0 +1,9 @@
+@import 'utilities/colors.css';
+
+@import 'components/navbar.css';
+@import 'components/button.css';
+
+@import 'utilities/fonts.css';
+@import 'utilities/colors.css';
+
+@import 'pages/home.css';
