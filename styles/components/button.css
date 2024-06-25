@@ -3,7 +3,7 @@
     font-size: 13px;
     background-color: var(--button-background-color);
     border-style: none;
-    padding: 1rem 2rem;
+    padding: 0.625rem 1.688rem;
     border-radius: 6px;
 }
 
@@ -16,13 +16,14 @@
 }
 
 .rounded-button {
-    padding: .55rem 2rem;
+    padding: 0.875rem 1.825rem;
     background: linear-gradient(-89deg, #FA8305, #FB9E3C);
     border-style: none;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5rem;
     width: fit-content;
+    transform: .5s ease;
 }
 
 .rounded-button:hover {
@@ -30,5 +31,30 @@
     border-color: var(--text-default-color);
     filter: brightness(.95);
     border-width: .2px;
-    transition: .5 ease;
+    transition: .5s ease;
+}
+
+.blue-button {
+    width: fit-content;
+    cursor: pointer;
+
+    border-style: none;
+    border-radius: 6px;
+    
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    background-color: rgba(255, 255, 255, 0.11);
+
+    padding: .625rem 1.875rem;
+    transition: .5s ease;
+}
+
+.blue-button:hover {
+    border-style: solid;
+    border-color: white;
+    font-weight: bold;
+    transition: .5s ease;
 }
