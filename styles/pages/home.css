@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--text-default-color);
-    font-family: var(--font-family-default);
 }
 
 body {
+    font-family: var(--font-family-default);
     background: var(--background-gradient-color);
     height: 100%;
     overflow-x: hidden;
@@ -21,6 +21,10 @@ main {
 a {
     color: var(--text-default-color);
     text-decoration: none;
+}
+
+li {
+    list-style: none;
 }
 
 .app {
@@ -84,4 +88,20 @@ section .section-left span {
     font-size: 1rem;
     line-height: 200%;
     width: 32.938rem;
+}
+
+section.second-section {
+    font-family: var(--font-family-secondary);
+}
+
+section.second-section .section-center {
+    gap: 3.563rem;
+}
+
+.section-center .section-header {
+    justify-content: space-between;
+}
+
+.section-list {
+    gap: 2.313rem;
 }
