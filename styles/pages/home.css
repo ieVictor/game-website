@@ -175,6 +175,32 @@ main section.third-section {
     width: 100%;
 }
 
+.third-section .section-content {
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section .section-content .section-text {
+    align-items: center;
+    gap: 1.56rem;
+}
+
+.third-section .section-content h1 {
+    font-size: 30px;
+    width: 800px;
+    line-height: 187.5%;
+    text-align: center;
+}
+
+.third-section .section-content span {
+    text-align: center;
+    font-size: 16;
+    font-weight: 400;
+    line-height: 185.5%;
+    width: 820px;
+}
+
+
 .background-image {
     position: absolute;
     width: 110vw;
