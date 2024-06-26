@@ -2,20 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--text-default-color);
+    
 }
 
 body {
+    color: var(--text-default-color);
     font-family: var(--font-family-default);
     background: var(--background-gradient-color);
-    height: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
-}
-
-main {
-    width: 100%;
-    height: 100%;
-    padding: 7.813rem 9.188rem 0rem 9.188rem;
 }
 
 a {
@@ -27,11 +22,39 @@ li {
     list-style: none;
 }
 
-.app {
-    width: 100%;
-    height: 100%;
+/* Example of Grid
+[full-width-start] minmax(0,var(--padding-inline)) 
+[full-width-padding-start] minmax(0,1fr) 
+[content-start] min(100% - var(--padding-inline) * 2,var(--content-max-width)) 
+[content-end] minmax(0,1fr) 
+[full-width-padding-end] minmax(0,var(--padding-inline)) [full-width-end] 
+*/
+#app {
+    --content-max-width: 1325px;
+    --padding-top: 2.25rem;
+    --padding-inline: 3.438rem;
+    padding-top: var(--padding-top);
+
+    justify-content: space-between;
+    column-gap: 0;
+    row-gap: 0;
+
+    grid-template-rows: 
+        [row-start] auto
+        [row-content] 1fr
+        [row-end] auto; 
+    
     margin: 0 auto;
-    max-width: 100vw;  
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns:
+        [column-padding-start] minmax(0, var(--padding-inline))
+        [column-content] minmax(0, var(--content-max-width))
+        [column-padding-end] minmax(0, var(--padding-inline));
 }
 
 .absolute {
@@ -42,7 +65,36 @@ li {
     z-index: -1;
 }
 
+main {
+    width: 100%;
+    height: 100%;
+    padding-top: 7.938rem;
+    grid-column-start: column-content;
+    grid-row-start: row-content;
+    display: grid;  
+    grid-template-rows:
+        [main-first-section] auto
+        [main-second-section] auto;
+}
+
+main.content-grid {
+    --main-content-max-width: 1147px;
+    --main-padding-inline: calc(9.188rem - var(--padding-inline));
+    
+    grid-template-columns: 
+        [main-column-padding-start] minmax(0, var(--main-padding-inline))
+        [main-content] minmax(0, var(--main-content-max-width))
+        [main-column-padding-end] minmax(0, var(--main-padding-inline));
+}
+
+footer {
+    grid-column-start: column-content;
+    grid-row-start: row-end;
+}
+
 section.first-section {
+    grid-column-start: main-content;
+    grid-row-start: main-first-section;
     height: 88vh;
 }
 
@@ -91,6 +143,8 @@ section .section-left span {
 }
 
 section.second-section {
+    grid-column-start: main-content;
+    grid-row-start: main-second-section;
     font-family: var(--font-family-secondary);
 }
 
