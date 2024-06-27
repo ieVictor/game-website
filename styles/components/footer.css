@@ -4,9 +4,23 @@ footer {
     grid-column-start: padding-start-column;
     grid-row-start: footer-area-row;
 }
+
 footer .footer-upper-content {
     gap: 4.875rem;
-    padding: 4.6875rem 0 3.3125rem 6.3125rem;
+    padding: 4.6875rem 0 3.3125rem 0rem;
+    align-self: center;
+    justify-self: center;
+    grid-column-start: footer-area-column;
+    grid-row-start: footer-area-row;
+}
+footer .footer-lower-content {
+    width: 100vw;
+    border-style: solid;
+    border-width: 0;
+    border-top-width: 1px;
+    border-color: #D2D2D2;
+    grid-column-start: footer-padding-start-column;
+    grid-row-start: footer-copyright-row;
 }
 footer h3 {
     font-size: 17px;
@@ -21,6 +35,9 @@ footer p {
     width: fit-content;
     font-weight: 400;
     font-size: 16px;
+}
+footer hr {
+    width: 100vw;
 }
 footer .footer-description {
     width: 23.25rem;

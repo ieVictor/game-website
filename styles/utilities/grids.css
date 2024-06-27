@@ -8,10 +8,25 @@
     --section-container-max-width: 
         calc(100vw - (2 * var(--app-container-padding-side) + var(--section-container-padding-side)));
     --section-container-padding-side: 5.8125rem;
+
+    --section-large-container-max-width:
+    calc(100vw - (2 * var(--app-container-padding-side) + var(--section-large-container-padding-side)));
+    --section-large-container-padding-side: 5.0625rem;
+
+    --footer-container-padding-side: 3.375rem;
+    --footer-container-max-width:
+    calc(100vw - (2 * var(--app-container-padding-side) + var(--footer-container-padding-side))); 
+}
+
+@media only screen and (min-width: 1601px){
+    :root {
+        --app-container-padding-side: 85px;
+    }
 }
 
 #app {
     display: grid;
+    overflow-x: hidden;
     min-width: 100vw;
     min-height: 100vh;
     
@@ -45,6 +60,31 @@
     grid-template-rows:
     [section-area-row] auto;
 }
+
+.section-grid-xl {
+    display: grid;
+
+    grid-template-columns: 
+    [section-padding-start-column] minmax(0, var(--section-large-container-padding-side))
+    [section-area-column] minmax(0, var(--section-container-max-width))
+    [section-padding-end-column] minmax(0, var(--section-large-container-padding-side));
+
+    grid-template-rows:
+    [section-area-row] auto;
+}
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 
+    [footer-padding-start-column] minmax(0, var(--section-large-container-padding-side))
+    [footer-area-column] minmax(0, var(--section-container-max-width))
+    [section-padding-end-column] minmax(0, var(--section-large-container-padding-side));
+
+    grid-template-rows:
+    [footer-area-row] auto
+    [footer-copyright-row] auto;
+}
+
 
 .grid-center {
     grid-column-start: section-area-column;

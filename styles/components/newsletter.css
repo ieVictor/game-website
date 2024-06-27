@@ -1,7 +1,8 @@
 .section-content .section-newsletter {
     width: 100%;
     padding: 2.5rem 3.5rem; 
-    gap: 2.625rem;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1C140F;  
     border-radius: 15px;
 }

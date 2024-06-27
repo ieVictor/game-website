@@ -35,8 +35,8 @@ main {
 
 .absolute {
     position: absolute;
-    left: 41%;
-    top: -250px;
+    left: calc(100% - 47.5rem);
+    bottom: 134px;
     pointer-events: none;
     z-index: -1;
 }
@@ -297,7 +297,7 @@ main section.fifth-section .section-center {
 .fifth-section .section-content {
     width: 100%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -306,7 +306,7 @@ main section.fifth-section .section-center {
 }
 
 main .sixth-section .section-content {
-    width: 1170px;
+    width: 100%;
     gap: 4.625rem;
     padding-bottom: 10.1875rem;
 }
