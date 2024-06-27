@@ -1,7 +1,8 @@
 footer {
     width: 100vw;
     background-color: #070707;
-    grid-column-start: column-padding-start;
+    grid-column-start: padding-start-column;
+    grid-row-start: footer-area-row;
 }
 footer .footer-upper-content {
     gap: 4.875rem;

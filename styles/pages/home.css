@@ -21,40 +21,16 @@ li {
     list-style: none;
 }
 
-/* Example of Grid
-[full-width-start] minmax(0,var(--padding-inline)) 
-[full-width-padding-start] minmax(0,1fr) 
-[content-start] min(100% - var(--padding-inline) * 2,var(--content-max-width)) 
-[content-end] minmax(0,1fr) 
-[full-width-padding-end] minmax(0,var(--padding-inline)) [full-width-end] 
-*/
-#app {
-    --content-max-width: 1325px;
-    --padding-top: 2.25rem;
-    --padding-inline: 3.438rem;
-    padding-top: var(--padding-top);
-
-    justify-content: space-between;
-    column-gap: 0;
-    row-gap: 0;
-
-    grid-template-rows: 
-        [row-start] auto
-        [padding-row] minmax(0, 7.81rem)
-        [row-content] 1fr
-        [row-end] auto; 
-    
-    margin: 0 auto;
-    min-width: 100vw;
-    min-height: 100vh;
+header {
+    grid-column-start: main-area-column;
+    grid-row-start: navigation-area-row;
 }
 
-.content-grid {
-    display: grid;
-    grid-template-columns:
-        [column-padding-start] minmax(0, var(--padding-inline))
-        [column-content] minmax(0, var(--content-max-width))
-        [column-padding-end] minmax(0, var(--padding-inline));
+main {
+    width: 100%;
+    height: 100%;
+    grid-column-start: main-area-column;
+    grid-row-start: main-area-row;
 }
 
 .absolute {
@@ -63,37 +39,6 @@ li {
     top: -250px;
     pointer-events: none;
     z-index: -1;
-}
-
-main {
-    width: 100%;
-    height: 100%;
-    grid-column-start: column-content;
-    grid-row-start: row-content;
-}
-
-.section-grid {
-    --main-content-max-width: 1147px;
-    --main-padding-inline: calc(9.188rem - var(--padding-inline));
-
-    display: grid;  
-    grid-template-rows:
-        [section-content] auto;
-
-    grid-template-columns: 
-        [main-column-padding-start] minmax(0, var(--main-padding-inline))
-        [main-content] minmax(0, var(--main-content-max-width))
-        [main-column-padding-end] minmax(0, var(--main-padding-inline));
-}
-
-.grid-center {
-    grid-column-start: main-content;
-    grid-row-start: section-content;
-}
-
-footer {
-    grid-column-start: column-content;
-    grid-row-start: row-end;
 }
 
 section.first-section {
@@ -147,8 +92,8 @@ section .section-left span {
 }
 
 section.second-section {
-    grid-column-start: main-content;
-    grid-row-start: main-second-section;
+    grid-column-start: main-area-column;
+    grid-row-start: main-area-row;
     font-family: var(--font-family-secondary);
     padding-bottom: 8rem;
 }
