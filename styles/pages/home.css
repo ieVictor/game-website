@@ -180,7 +180,7 @@ main section.forth-section {
     gap: 6.25rem;
     justify-content: center;
     align-items: center;
-    width: 1045px;
+    width: 100%;
 }
 
 .forth-section .section-content .section-text {
