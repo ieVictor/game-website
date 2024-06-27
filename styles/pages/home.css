@@ -171,13 +171,10 @@ section.second-section .section-center {
 }
 
 main section.third-section .section-center {
-    align-items: center;
-    justify-content: center;
     gap: 4.5rem;
 }
 
 .third-section .section-header {
-    align-items: center;
     text-align: center;
 }
 
@@ -214,8 +211,6 @@ main section.forth-section {
 .forth-section .section-content {
     flex-wrap: wrap;
     gap: 6.25rem;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
@@ -240,9 +235,6 @@ main section.forth-section {
 }
 
 .forth-section .section-content .white-icon {
-    align-items: center;
-    justify-content: center;
-
     background: white;
     width: 65px;
     height: 65px;
