@@ -68,7 +68,6 @@ li {
 main {
     width: 100%;
     height: 100%;
-    /* padding-top: 7.938rem; */
     grid-column-start: column-content;
     grid-row-start: row-content;
 }
@@ -99,7 +98,8 @@ footer {
 
 section.first-section {
     position: relative;
-    height: 88vh;
+    height: fit-content;
+    padding-bottom: 11.25rem;
 }
 
 section .section-left {
@@ -150,6 +150,7 @@ section.second-section {
     grid-column-start: main-content;
     grid-row-start: main-second-section;
     font-family: var(--font-family-secondary);
+    padding-bottom: 8rem;
 }
 
 section.second-section .section-center {
