@@ -363,6 +363,7 @@ main section.fifth-section .section-center {
 main .sixth-section .section-content {
     width: 1170px;
     gap: 4.625rem;
+    padding-bottom: 10.1875rem;
 }
 .sixth-section .section-content .section-header {
     gap: 2rem;
