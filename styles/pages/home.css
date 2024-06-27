@@ -170,6 +170,10 @@ section.second-section .section-center {
     justify-content: space-between;
 }
 
+main section.fifth-section {
+    padding-top: 9.25rem;
+}
+
 main section.fifth-section .section-center {
     align-items: center;
     justify-content: center;
