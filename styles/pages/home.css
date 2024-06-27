@@ -176,8 +176,11 @@ main section.forth-section {
 }
 
 .forth-section .section-content {
+    flex-wrap: wrap;
+    gap: 6.25rem;
     justify-content: center;
     align-items: center;
+    width: 1045px;
 }
 
 .forth-section .section-content .section-text {
@@ -200,16 +203,41 @@ main section.forth-section {
     width: 820px;
 }
 
+.forth-section .section-content .white-icon {
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 9999px;
+}
+
+.forth-section .section-content .list-item {
+    gap: 1.88rem;
+    align-items: center;
+}
+
+.section-content .list-item .item-description {
+    gap: 1.50rem;
+    align-items: center;
+}
+
+.list-item .item-description img {
+    width: 21px;
+    height: 18px;
+}
 
 .background-image {
     position: absolute;
     width: 110vw;
-    height: 800px;
+    height: 874px;
     top: 0;
     left: -12vw;
     background-image: url("../../assets/images/dark-background.png");
     background-size: cover;
     background-position: center left;
+    object-fit: cover;
     filter: blur(3px) brightness(20%);
     z-index: -1;
 }
