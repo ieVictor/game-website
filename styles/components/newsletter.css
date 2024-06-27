@@ -1,0 +1,42 @@
+.section-content .section-newsletter {
+    width: 100%;
+    padding: 2.5rem 3.5rem; 
+    gap: 2.625rem;
+    background-color: #1C140F;  
+    border-radius: 15px;
+}
+.section-newsletter .newsletter-description {
+    width: 636px;
+    gap: 0,625rem
+}
+.section-newsletter .newsletter-description h2 {
+    width: fit-content;
+    font: 30px;
+    font-weight: 500;
+}
+.section-newsletter .newsletter-description span {
+    width: 100%;
+    font: 17px;
+    font-weight: 400;
+    line-height: auto;
+}
+.section-newsletter .newsletter-form {
+    align-items: center;
+    justify-content: space-between;
+    width: 385.68px;
+    height: 3rem;
+    padding: 0.375rem 0.375rem 0.375rem 1.3125rem;
+    background-color: white;
+    border-radius: 8px;
+}
+.newsletter-form input {
+    outline: none;
+    border: none;
+    color: #1C140F;
+    font-family: var(--font-family-default);
+    font-weight: 300;
+    font-size: 13px;
+} 
+.newsletter-form input::placeholder {
+    color: #898989;
+}   
