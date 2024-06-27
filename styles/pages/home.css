@@ -238,44 +238,6 @@ main section.third-section .section-content {
     z-index: -1;
 }
 
-main section.fifth-section {
-    padding-top: 9.25rem;
-}
-
-main section.fifth-section .section-center {
-    align-items: center;
-    justify-content: center;
-    gap: 4.5rem;
-}
-
-.fifth-section .section-header {
-    align-items: center;
-    text-align: center;
-}
-
-.fifth-section .section-header h1 {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 187.5%;
-}
-
-.fifth-section .section-header span {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 187.5%;
-    width: 500px;
-}
-
-.fifth-section .section-content {
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.fifth-section .section-content div {
-    gap: 1.6875rem;
-}
 
 main section.forth-section {
     position: relative;
@@ -356,4 +318,43 @@ main section.forth-section {
         width: 120vw;
         left: -20vw;
     }
+}
+
+main section.fifth-section {
+    padding-top: 9.25rem;
+}
+
+main section.fifth-section .section-center {
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+}
+
+.fifth-section .section-header {
+    align-items: center;
+    text-align: center;
+}
+
+.fifth-section .section-header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 187.5%;
+}
+
+.fifth-section .section-header span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 187.5%;
+    width: 500px;
+}
+
+.fifth-section .section-content {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.fifth-section .section-content div {
+    gap: 1.6875rem;
 }
