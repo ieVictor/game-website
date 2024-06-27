@@ -1,6 +1,7 @@
 @import './utilities/colors.css';
 @import './utilities/fonts.css';
 @import './utilities/layout.css';
+@import './utilities/grids.css';
 
 @import './pages/home.css';
 
