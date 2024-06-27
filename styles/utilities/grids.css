@@ -1,11 +1,12 @@
 :root {
-    --content-max-width: 1332px;
+    --content-max-width: calc(100vw - (2 * var(--app-container-padding-side)));
     --app-container-padding-start-row: 7.8125rem;
     --app-container-padding-vertical: 7.5625rem;
     --app-container-padding-top: 2.25rem;
     --app-container-padding-side: 3.4375rem;
 
-    --section-container-max-width: 1147px;
+    --section-container-max-width: 
+        calc(100vw - (2 * var(--app-container-padding-side) + var(--section-container-padding-side)));
     --section-container-padding-side: 5.8125rem;
 }
 
@@ -34,17 +35,18 @@
 }
 
 .section-grid {
-    display: grid;  
-    grid-template-rows:
-        [section-content] auto;
+    display: grid;
 
     grid-template-columns: 
-        [main-column-padding-start] minmax(0, var(--section-container-padding-side))
-        [main-content] minmax(0, var(--section-container-max-width))
-        [main-column-padding-end] minmax(0, var(--section-container-padding-side));
+    [section-padding-start-column] minmax(0, var(--section-container-padding-side))
+    [section-area-column] minmax(0, var(--section-container-max-width))
+    [section-padding-end-column] minmax(0, var(--section-container-padding-side));
+
+    grid-template-rows:
+    [section-area-row] auto;
 }
 
 .grid-center {
-    grid-column-start: main-content;
-    grid-row-start: section-content;
+    grid-column-start: section-area-column;
+    grid-row-start: section-area-row;
 }
