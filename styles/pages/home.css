@@ -35,8 +35,8 @@ main {
 
 .absolute {
     position: absolute;
-    left: calc(100% - 47.5rem);
-    bottom: 134px;
+    right: -125px;
+    top: 0px;
     pointer-events: none;
     z-index: -1;
 }
@@ -46,50 +46,38 @@ section.first-section {
     height: fit-content;
     padding-bottom: 11.25rem;
 }
-
+/* TODO: Determinar um tamanho responsivo para essa seção container */
 section .section-left {
-    display: flex;
     align-items: start;
-    flex-direction: column;
     gap: 3.125rem;
-    width: fit-content;
-    height: 100%;
 }
-
 section .section-left .section-text {
-    display: flex;
-    flex-direction: column;
+    width: 46.0664%;
     gap: 1.625rem;
-    width: fit-content;
 }
-
 .section-text .section-title {
-    display: flex;
-    flex-direction: column;
     line-height: 155.2%;
     gap: 1.063rem;
-    width: fit-content;
 }
-
+/* TODO: Trocar os tamanhos fíxos para tamanhos responsivo */
 
 section .section-left h1 {
-    width: 25.313rem;
-    font-size: 3.125rem;
+    width: 76.8501%;
+    font-size: 3.472vw;
     line-height: 155.2%;
 }
-
 section .section-left h2 {
-    font-size: 20px;
+    font-size: 1.389vw;
     color: var(--text-secondary-color);
     -webkit-text-stroke: 1px black;
 }
-
 section .section-left span {
+    width: 100%;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.111vw;
     line-height: 200%;
-    width: 32.938rem;
 }
+/* ---------------------------- */
 
 section.second-section {
     grid-column-start: main-area-column;
@@ -97,15 +85,12 @@ section.second-section {
     font-family: var(--font-family-secondary);
     padding-bottom: 8rem;
 }
-
 section.second-section .section-center {
     gap: 3.563rem;
 }
-
 .section-center .section-header {
     justify-content: space-between;
 }
-
 .section-header h1 {
     font-size: 1.938rem;
     line-height: 187.5%;

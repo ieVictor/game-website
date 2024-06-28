@@ -18,12 +18,6 @@
     calc(100vw - (2 * var(--app-container-padding-side) + var(--footer-container-padding-side))); 
 }
 
-@media only screen and (min-width: 1601px){
-    :root {
-        --app-container-padding-side: 85px;
-    }
-}
-
 #app {
     display: grid;
     overflow-x: hidden;
