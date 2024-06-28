@@ -35,18 +35,17 @@ main {
 
 .absolute {
     position: absolute;
-    right: -125px;
-    top: 0px;
+    right: -180px;
+    top: -203px;
     pointer-events: none;
     z-index: -1;
 }
 
+/* ---------------------------- */
 section.first-section {
     position: relative;
-    height: fit-content;
     padding-bottom: 11.25rem;
 }
-/* TODO: Determinar um tamanho responsivo para essa seção container */
 section .section-left {
     align-items: start;
     gap: 3.125rem;
@@ -59,57 +58,47 @@ section .section-left .section-text {
     line-height: 155.2%;
     gap: 1.063rem;
 }
-/* TODO: Trocar os tamanhos fíxos para tamanhos responsivo */
-
 section .section-left h1 {
     width: 76.8501%;
-    font-size: 3.472vw;
+    font-size: min(3.472vw, 70px);
     line-height: 155.2%;
 }
 section .section-left h2 {
-    font-size: 1.389vw;
+    font-size: min(1.389vw, 40px);
     color: var(--text-secondary-color);
     -webkit-text-stroke: 1px black;
 }
 section .section-left span {
     width: 100%;
     font-weight: 500;
-    font-size: 1.111vw;
+    font-size: min(1.111vw, 36px);
     line-height: 200%;
 }
-/* ---------------------------- */
 
+/* ---------------------------- */
 section.second-section {
+    font-family: var(--font-family-secondary);
     grid-column-start: main-area-column;
     grid-row-start: main-area-row;
-    font-family: var(--font-family-secondary);
     padding-bottom: 8rem;
 }
 section.second-section .section-center {
     gap: 3.563rem;
-}
-.section-center .section-header {
-    justify-content: space-between;
 }
 .section-header h1 {
     font-size: 1.938rem;
     line-height: 187.5%;
 }
 
-.section-list {
-    justify-content: space-between;
-}
-
+/* -------------------------------- */
 main section.third-section {
     height: 1037px;
 }
-
 main section.third-section .section-content {
     position: relative;
     align-items: center;
     gap: 4.1875rem;
 }
-
 .third-section .section-content h1 {
     text-align: center;
     line-height: 187.5%;
@@ -117,26 +106,22 @@ main section.third-section .section-content {
     font-weight: 600;
     width: 826px;
 }
-
 .third-section .section-content .section-description {
     width: 545px;
     align-self: flex-start;
     gap: 2rem;
 }
-
 .section-content .section-description h2 {
     line-height: 187.5%;
     font-size: 30px;
     font-weight: 600;
 }
-
 .section-content .section-description p {
     width: 100%;
     line-height: 187.5%;
     font-size: 16px;
     font-weight: 400;
 }
-
 .section-content .absolute-image {
     position: absolute;
     z-index: -1;
@@ -145,7 +130,6 @@ main section.third-section .section-content {
     bottom: 141px;
     padding-bottom: 1rem;
 }
-
 .section-content .section-image {
     display: flex;
     width: 100%;
@@ -153,21 +137,19 @@ main section.third-section .section-content {
     position: relative;
     align-items: end;
 }
-
 .section-image #spider-man {
     height: 28.875rem;
     width: 100%;
     position: absolute;
     z-index: 1;
 }
-
 .section-image #memphis-image {
     position: absolute;
     left: 75%;
     top: 5px;
     z-index: -1;
 }
-
+/* ---------------------------------------- */
 
 main section.forth-section {
     position: relative;
