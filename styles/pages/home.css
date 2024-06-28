@@ -150,72 +150,74 @@ main section.third-section .section-content {
     top: 0.8726%;
     z-index: -1;
 }
-/* ---------------------------------------- */
 
+/* ---------------------------------------- */
 main section.forth-section {
+    height: min(54.625rem, 60.694vw);
     position: relative;
-    height: 874px;
-    width: 100%;
 }
 
 .forth-section .section-content {
     flex-wrap: wrap;
-    gap: 6.25rem;
+    gap: min(6.25rem, 6.944vw);
     width: 100%;
 }
 
 .forth-section .section-content .section-text {
     align-items: center;
-    gap: 1.56rem;
+    gap: min(1.56rem, 1.733vw);
 }
 
 .forth-section .section-content h1 {
-    font-size: 30px;
-    width: 800px;
+    font-size: min(1.875rem, 2.083vw);
+    width: min(50rem, 55.556vw);
     line-height: 187.5%;
     text-align: center;
 }
 
 .forth-section .section-content span {
     text-align: center;
-    font-size: 1rem;
+    font-size: min(1rem, 1.111vw);
     font-weight: 400;
     line-height: 185.5%;
-    width: 820px;
+    width: min(51.25rem, 56.944vw);
 }
 
 .forth-section .section-content .white-icon {
     background: white;
-    width: 65px;
-    height: 65px;
+    width: min(4.0625rem, 4.514vw);
+    height: min(4.0625rem, 4.514vw);
     border-radius: 9999px;
 }
 
 .forth-section .section-content .list-item {
-    gap: 1.88rem;
+    gap: min(1.88rem, 2.089vw);
     align-items: center;
 }
 
 .section-content .list-item .item-description {
-    gap: 1.50rem;
+    gap: min(1.50rem, 1.667vw);
     align-items: center;
 }
 
+.list-item .item-description p {
+    font-size: min(1rem, 1.111vw);
+}
+
 .list-item .item-description img {
-    width: 21px;
-    height: 18px;
+    width: min(1.3125rem, 1.458vw);
+    height: min(1.125rem, 1.25vw);
 }
 
 .background-image {
     position: absolute;
     width: 110vw;
-    height: 874px;
+    height: min(54.625rem, 60.694vw);
     top: 0;
     left: -12vw;
     background-image: url("../../assets/images/dark-background.png");
     background-size: cover;
     background-position: center left;
-    object-fit: cover;
     z-index: -1;
 }
 

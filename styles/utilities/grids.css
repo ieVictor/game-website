@@ -31,6 +31,37 @@
         min(3.375rem, 3.75vw);
 }
 
+@media screen and (max-width: 62.5rem) {
+    :root {
+        --app-padding-top: 1.25rem;
+        --app-container-padding-start-row: 5.8125rem;
+
+        --section-container-padding-side: 1rem;
+        --section-large-container-padding-side: 2rem;
+        --footer-container-padding-side: 0rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --app-padding-top: 1rem;
+        --app-container-padding-start-row: 3.8125rem;
+
+        --section-container-padding-side: .5rem;
+        --section-large-container-padding-side: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    :root {
+        --app-padding-top: .75rem;
+        --app-container-padding-start-row: 1.8125rem;
+
+        --section-container-padding-side: .25rem;
+        --section-large-container-padding-side: .5rem;
+    }
+}
+
 #app {
     display: grid;
     overflow-x: hidden;
