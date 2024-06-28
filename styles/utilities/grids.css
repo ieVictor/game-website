@@ -1,29 +1,34 @@
 :root {
-    --content-max-width: calc(100vw - (2 * var(--app-container-padding-side)));
+    --content-max-width: 
+        calc(100vw - (2 * var(--app-container-padding-side)));
     --content-max-width-limited:
         min(var(--content-max-width), 1585px);
+
+    --app-padding-top: 2.25rem;
     --app-container-padding-start-row: 7.8125rem;
-    --app-container-padding-vertical: 7.5625rem;
-    --app-container-padding-top: 2.25rem;
-    --app-container-padding-side: 3.4375rem;
+    --app-container-padding-side: 
+        min(3.4375rem, 3.819vw);
 
     --section-container-max-width: 
         calc(100vw - (2 * var(--app-container-padding-side) + var(--section-container-padding-side)));
     --section-container-max-width-limited:
         min(var(--section-container-max-width), 1400px);
-    --section-container-padding-side: 5.8125rem;
+    --section-container-padding-side: 
+        min(5.8125rem, 6.458vw);
 
     --section-large-container-max-width:
         calc(100vw - (2 * var(--app-container-padding-side) + var(--section-large-container-padding-side)));
     --section-large-container-max-width:
         min(var(--section-large-container-max-width), 1423px);
-    --section-large-container-padding-side: 5.0625rem;
+    --section-large-container-padding-side: 
+        min(5.0625rem, 5.625vw);
 
-    --footer-container-padding-side: 3.375rem;
     --footer-container-max-width:
         calc(100vw - (2 * var(--app-container-padding-side) + var(--footer-container-padding-side)));
     --footer-container-max-width-limited: 
         min(var(--footer-container-max-width), 1454px);
+    --footer-container-padding-side: 
+        min(3.375rem, 3.75vw);
 }
 
 #app {
@@ -32,7 +37,7 @@
     min-width: 100vw;
     min-height: 100vh;
     
-    padding-top: var(--app-container-padding-top);
+    padding-top: var(--app-padding-top);
 
     justify-content: space-between;
     column-gap: 0;
