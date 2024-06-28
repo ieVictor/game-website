@@ -92,42 +92,42 @@ section.second-section .section-center {
 
 /* -------------------------------- */
 main section.third-section {
-    height: 1037px;
+    height: min(72rem, 80.014vw);
 }
 main section.third-section .section-content {
     position: relative;
     align-items: center;
-    gap: 4.1875rem;
+    gap: min(4.653vw, 4.1875rem);
 }
 .third-section .section-content h1 {
     text-align: center;
     line-height: 187.5%;
-    font-size: 35px;
+    font-size: min(2.431vw, 2.1875rem);
     font-weight: 600;
-    width: 826px;
+    width: 72.0768%;
 }
 .third-section .section-content .section-description {
-    width: 545px;
+    width: 47.6399%;
     align-self: flex-start;
-    gap: 2rem;
+    gap: min(2.222vw, 2rem);
 }
 .section-content .section-description h2 {
     line-height: 187.5%;
-    font-size: 30px;
+    font-size: min(2.083vw, 1.875rem);
     font-weight: 600;
 }
 .section-content .section-description p {
     width: 100%;
     line-height: 187.5%;
-    font-size: 16px;
+    font-size: min(1.111vw, 1rem);
     font-weight: 400;
 }
 .section-content .absolute-image {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 530px;
-    bottom: 141px;
+    height: 51.109%;
+    bottom: 13.5969%;
     padding-bottom: 1rem;
 }
 .section-content .section-image {
@@ -138,15 +138,16 @@ main section.third-section .section-content {
     align-items: end;
 }
 .section-image #spider-man {
-    height: 28.875rem;
+    height: 87.1698%;
     width: 100%;
     position: absolute;
     z-index: 1;
 }
 .section-image #memphis-image {
+    width: 17%;
     position: absolute;
     left: 75%;
-    top: 5px;
+    top: 0.8726%;
     z-index: -1;
 }
 /* ---------------------------------------- */
