@@ -5,63 +5,62 @@ body {
 .contact-us section.first-section {
     height: fit-content;
     width: 100%;
-    padding-bottom: 9.1875rem;
+    padding-bottom: 147px;
 }
 .contact-us section.first-section div.section-content {
     width: 100%;
-    gap: 62px;
+    gap: 3.875rem;
 }
 .contact-us section.first-section div.section-content .section-header {
     text-align: center;
-    gap: .875rem;
-    padding-bottom: 31px;
+    gap: 14px;
+    padding-bottom: 1.9375rem;
 }
 div.section-content .section-header h1 { 
-    font-size: max(1.75rem, min(2.0625rem, 2.292vw));
+    font-size: max(28px, min(33px, 2.292vw));
     font-weight: 600;
 }
 div.section-content .section-header p {
-    font-size: max(.8rem, min(1rem, 1.111vw));
+    font-size: max(12.8px, min(16px, 1.111vw));
     font-weight: 400;
     line-height: 208.05%;
 }
 div.section-content .section-header span {
-    font-size: max(.8rem, min(1rem, 1.111vw));
+    font-size: max(12.8px, min(16px, 1.111vw));
     line-height: 185.5%;
     font-weight: 500;
 }
-
 .contact-us section.first-section div.section-content div.section-information {
-    font-size: max(1rem, min(1.25rem, 1.389vw));
+    font-size: max(16px, min(20px, 1.389vw));
     font-weight: 300;
     width: 100%;
     align-items: center;
     justify-content: space-between;
 }
 .vertical-rule {
-    width: .0625rem;
-    height: 102px;
-    border-left: solid .0625rem white;
+    width: 1px;
+    height: 6.375rem;
+    border-left: solid 1px white;
 }
 div.follow-us {
     width: 15.8207%;
-    gap: 18px;
+    gap: 1.125rem;
 }
 div.follow-us p {
-    font-size: max(.75rem,min(1rem, 1.111vw));
+    font-size: max(12px,min(16px, 1.111vw));
     width: max-content;
 }
 ul.social-media {
     width: fit-content;
-    gap: 16px;
+    gap: 1rem;
 }
 ul.social-media li.social-media-icon-black {
-    width: max(30px ,min(34px, 2.361vw));
-    height: max(30px ,min(34px, 2.361vw));
+    width: max(1.875rem ,min(2.125rem, 2.361vw));
+    height: max(1.875rem ,min(2.125rem, 2.361vw));
 }
 div.telephone {
     width: 19.0021%;
-    gap: 25px;
+    gap: 1.5625rem;
     justify-content: center;
     align-items: center;
 }
@@ -69,11 +68,109 @@ div.telephone p {
     width: max-content;
 }
 div.telephone img {
-    width: 30px;
+    width: 1.875rem;
 }
 div.location {
     width: 32.0714%;
-    gap: 19px;
+    gap: 1.1875rem;
     justify-content: center;
     align-items: flex-start;
+}
+
+.contact-us section.second-section {
+    position: relative;
+    width: 100vw; 
+    height: 59.583vw;
+}
+.contact-us section.second-section .section-content {
+    width: 100%;
+    gap: 4.9375rem;
+}
+.contact-us section.second-section .section-content form {
+    row-gap: 20px;
+    width: 54.2003%;
+}
+.contact-us section.second-section .section-header {
+    text-align: center;
+}
+.contact-us section.second-section .section-header h1 {
+    font-size: max(1.625rem, min(1.875rem, 2.083vw));
+    font-weight: 400;
+    line-height: 189.5%;
+
+}
+.contact-us section.second-section .section-header p {
+    font-size: max(.625rem, min(.8125rem, 0.903vw));
+    font-weight: 500;
+    line-height: 189.5%;
+}
+.contact-us section.second-section .custom-background {
+    position: absolute;
+    right: var(--app-container-padding-side);
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #1C140F;
+    z-index: -1;
+}
+.contact-us section.second-section .custom-background .background-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+section.second-section div.section-content .custom-background .background-wrapper #line-upper {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contact-us section.second-section .custom-background #line-bottom {
+    position: absolute;
+    bottom: 0;
+}
+form div {
+    width: 100%;
+    gap: .1875rem;
+}
+form #name-inputs {
+    gap: 1.6875rem;
+}
+form input, form textarea {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 9px;
+    color: var(--white-color);
+    border: 0.6px solid #cecece;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 10px;
+}
+form textarea {
+    width: 100%;
+    height: 232px;
+    color: var(--white-color);
+    resize: none;
+    border-radius: 9px;
+    border: 0.6px solid #cecece;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 10px;  
+}
+form button {
+    margin-top: 1.9375rem;
+    width: 193px;
+    height: 56px;
+    background-color: var(--button-background-color);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    align-self: end;
+}
+form label {
+    font-size: 14px;
+    color: #4f4f4f;
 }
