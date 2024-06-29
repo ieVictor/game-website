@@ -1,12 +1,13 @@
 @import './utilities/colors.css';
 @import './utilities/fonts.css';
 @import './utilities/layout.css';
-
 @import './utilities/grids.css';
+
 @import './pages/home.css';
 
 @import './components/navbar.css';
 @import './components/button.css';
-@import './components/list-item.css';
+@import './components/carousel.css';
 @import './components/newsletter.css';
 @import './components/footer.css';
+@import './utilities/mobile.css';

@@ -1,14 +1,16 @@
 footer {
-    width: 100vw;
+    width: 100%;
     background-color: #070707;
     grid-column-start: padding-start-column;
+    grid-column-end: padding-end-column;
     grid-row-start: footer-area-row;
+    justify-content: center;
 }
 
 footer .footer-upper-content {
+    width: 100%;
     gap: 4.875rem;
-    padding: 4.6875rem 0 3.3125rem 0rem;
-    align-self: center;
+    padding: 4.6875rem 0 3.3125rem 0;
     justify-self: center;
     grid-column-start: footer-area-column;
     grid-row-start: footer-area-row;
@@ -19,26 +21,25 @@ footer .footer-lower-content {
     border-width: 0;
     border-top-width: 1px;
     border-color: #D2D2D2;
-    grid-column-start: footer-padding-start-column;
+    grid-column-start: footer-outside-start-column;
+    grid-column-end: footer-outside-end-column;
     grid-row-start: footer-copyright-row;
 }
 footer h3 {
-    font-size: 17px;
+    font-size: max(.9375rem, min(1.0625rem,1.181vw));
     font-weight: 500;
 }
 footer span {
     width: 100%;
     font-weight: 400;
-    font-size: 16px;
+    font-size: max(.9375rem, min(1rem, 1.111vw));
 }
 footer p {
     width: fit-content;
     font-weight: 400;
-    font-size: 16px;
+    font-size: max(.9375rem, min(1rem, 1.111vw));
 }
-footer hr {
-    width: 100vw;
-}
+
 footer .footer-description {
     width: 23.25rem;
     gap: 1.5625rem;

@@ -5,19 +5,20 @@
     align-items: center;
     background-color: #1C140F;  
     border-radius: 15px;
+    gap: 1rem;
 }
 .section-newsletter .newsletter-description {
-    width: 636px;
-    gap: 0,625rem
+    width: max(27.25rem, min(39.75rem, 44.167vw));
+    gap: 0.625rem;
 }
 .section-newsletter .newsletter-description h2 {
     width: fit-content;
-    font: 30px;
+    font-size: max(1.3rem, min(1.875rem, 2.083vw));
     font-weight: 500;
 }
 .section-newsletter .newsletter-description span {
     width: 100%;
-    font: 17px;
+    font-size: max(.7rem, min(1.0625rem, 1.181vw));
     font-weight: 400;
     line-height: auto;
 }
@@ -41,3 +42,10 @@
 .newsletter-form input::placeholder {
     color: #898989;
 }   
+
+@media screen and (max-width: 900px) {
+    .section-newsletter .newsletter-description {
+        align-items: center;
+        width: 100%;
+    } 
+}
