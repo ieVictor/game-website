@@ -5,13 +5,14 @@ footer {
     grid-column-end: padding-end-column;
     grid-row-start: footer-area-row;
     justify-content: center;
+    align-items: center;
 }
 
 footer .footer-upper-content {
     width: 100%;
     gap: 4.875rem;
     padding: 4.6875rem 0 3.3125rem 0;
-    justify-self: center;
+    justify-content: center;
     grid-column-start: footer-area-column;
     grid-row-start: footer-area-row;
 }

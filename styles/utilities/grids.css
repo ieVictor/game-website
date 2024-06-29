@@ -25,8 +25,10 @@
 
     --footer-container-max-width:
         calc(100vw - (2 * var(--app-container-padding-side) + var(--footer-container-padding-side)));
+    /* Remove This */
     --footer-container-max-width-limited: 
         min(var(--footer-container-max-width), 1454px);
+    /* ------------ */
     --footer-container-padding-side: 
         min(3.375rem, 3.75vw);
 }
@@ -73,6 +75,7 @@
     column-gap: 0;
     row-gap: 0;
     margin: 0 auto;
+    grid-auto-columns: 1fr;
 
     grid-template-columns:
     [padding-start-column] var(--app-container-padding-side)
@@ -116,7 +119,7 @@
     grid-template-columns: 
     [footer-outside-start-column] var(--app-container-padding-side)
     [footer-padding-start-column] var(--footer-container-padding-side)
-    [footer-area-column] minmax(0, var(--footer-container-max-width-limited))
+    [footer-area-column] minmax(0, var(--footer-container-max-width))
     [footer-padding-end-column] var(--footer-container-padding-side)
     [footer-outside-end-column] var(--app-container-padding-side);
 

@@ -1,8 +1,7 @@
 .navbar {
     display: flex;
-    grid-row-start: 1;
-    grid-column-start: 2;
-    /* padding: 3rem 3.5rem 0 3rem; */
+    grid-row-start: navigation-area-row;
+    grid-column-start: main-area-column;
     width: 100%;
     z-index: 1000;
     align-items: center;
