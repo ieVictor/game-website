@@ -174,3 +174,26 @@ form label {
     font-size: 14px;
     color: #4f4f4f;
 }
+
+.contact-us section.third-section .section-content {
+    width: 100%;
+    gap: max(4rem, min(4.625rem, 5.139vw));
+    padding-top: 10.1875rem;
+    padding-bottom: 10.1875rem;
+}
+.contact-us section.third-section .section-content .section-header {
+    gap: 2rem;
+    width: 46.6598%;
+}
+.contact-us section.third-section .section-content .section-header h2 {
+    width: fit-content;
+    font-size: 30px;
+    line-height: 187.5%;
+    font-weight: 600;
+}
+.contact-us section.third-section .section-content .section-header span {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 187.5%;
+    font-weight: 400;
+}
