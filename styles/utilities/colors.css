@@ -1,5 +1,6 @@
 :root {
     --background-gradient-color: linear-gradient(to bottom, #39289F, #422F9C);
+    --background-contact-gradient-color: linear-gradient(to bottom, #2211E7, #383837);
     --text-default-color: white;
     --text-secondary-color: #FA9021;
     --text-tertiary-color: #22185c;

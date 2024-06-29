@@ -1,0 +1,79 @@
+body {
+    background: var(--background-contact-gradient-color);
+}
+
+.contact-us section.first-section {
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 9.1875rem;
+}
+.contact-us section.first-section div.section-content {
+    width: 100%;
+    gap: 62px;
+}
+.contact-us section.first-section div.section-content .section-header {
+    text-align: center;
+    gap: .875rem;
+    padding-bottom: 31px;
+}
+div.section-content .section-header h1 { 
+    font-size: max(1.75rem, min(2.0625rem, 2.292vw));
+    font-weight: 600;
+}
+div.section-content .section-header p {
+    font-size: max(.8rem, min(1rem, 1.111vw));
+    font-weight: 400;
+    line-height: 208.05%;
+}
+div.section-content .section-header span {
+    font-size: max(.8rem, min(1rem, 1.111vw));
+    line-height: 185.5%;
+    font-weight: 500;
+}
+
+.contact-us section.first-section div.section-content div.section-information {
+    font-size: max(1rem, min(1.25rem, 1.389vw));
+    font-weight: 300;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.vertical-rule {
+    width: .0625rem;
+    height: 102px;
+    border-left: solid .0625rem white;
+}
+div.follow-us {
+    width: 15.8207%;
+    gap: 18px;
+}
+div.follow-us p {
+    font-size: max(.75rem,min(1rem, 1.111vw));
+    width: max-content;
+}
+ul.social-media {
+    width: fit-content;
+    gap: 16px;
+}
+ul.social-media li.social-media-icon-black {
+    width: max(30px ,min(34px, 2.361vw));
+    height: max(30px ,min(34px, 2.361vw));
+}
+div.telephone {
+    width: 19.0021%;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+div.telephone p {
+    width: max-content;
+}
+div.telephone img {
+    width: 30px;
+}
+div.location {
+    width: 32.0714%;
+    gap: 19px;
+    justify-content: center;
+    align-items: flex-start;
+}
