@@ -1,0 +1,149 @@
+body#contact {
+    background: var(--background-contact-gradient-color);
+}
+
+.contact-us section.first-section {
+    --content-max-width: 1190px;
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 147px;
+}
+.contact-us section.first-section div.section-content {
+    width: 100%;
+    gap: 3.875rem;
+}
+.contact-us section.first-section div.section-content .section-header {
+    text-align: center;
+    gap: 14px;
+    padding-bottom: 1.9375rem;
+}
+div.section-content .section-header h1 { 
+    font-size: max(28px, min(33px, 2.292vw));
+    font-weight: 600;
+}
+div.section-content .section-header p {
+    font-size: max(12.8px, min(16px, 1.111vw));
+    font-weight: 400;
+    line-height: 208.05%;
+}
+div.section-content .section-header span {
+    font-size: max(12.8px, min(16px, 1.111vw));
+    line-height: 185.5%;
+    font-weight: 500;
+}
+.contact-us section.first-section div.section-content div.section-information {
+    font-size: max(16px, min(20px, 1.389vw));
+    font-weight: 300;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.vertical-rule {
+    width: 1px;
+    height: 6.375rem;
+    border-left: solid 1px white;
+}
+div.follow-us {
+    width: 15.8207%;
+    gap: 1.125rem;
+}
+div.follow-us p {
+    font-size: max(12px,min(16px, 1.111vw));
+    width: max-content;
+}
+ul.social-media {
+    width: fit-content;
+    gap: 1rem;
+}
+ul.social-media li.social-media-icon-black {
+    width: max(1.875rem ,min(2.125rem, 2.361vw));
+    height: max(1.875rem ,min(2.125rem, 2.361vw));
+}
+div.telephone {
+    width: 19.0021%;
+    gap: 1.5625rem;
+    justify-content: center;
+    align-items: center;
+}
+div.telephone p {
+    width: max-content;
+}
+div.telephone img {
+    width: 1.875rem;
+}
+div.location {
+    width: 32.0714%;
+    gap: 1.1875rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-us section.second-section {
+    width: 100%; 
+    position: relative;
+    height: 59.583vw;
+    background-color: #1C140F;
+}
+.contact-us section.second-section .section-content {
+    width: 100%;
+    gap: 4.9375rem;
+}
+.contact-us section.second-section .section-content form {
+    row-gap: 20px;
+    width: 54.2003%;
+}
+.contact-us section.second-section .section-header {
+    text-align: center;
+}
+.contact-us section.second-section .section-header h1 {
+    font-size: max(1.625rem, min(1.875rem, 2.083vw));
+    font-weight: 400;
+    line-height: 189.5%;
+}
+.contact-us section.second-section .section-header p {
+    font-size: max(.625rem, min(.8125rem, 0.903vw));
+    font-weight: 500;
+    line-height: 189.5%;
+}
+section.second-section #line-upper {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contact-us section.second-section #line-bottom {
+    position: absolute;
+    bottom: 0;
+}
+form div {
+    width: 100%;
+    gap: .1875rem;
+}
+form #name-inputs {
+    gap: 1.6875rem;
+}
+
+.contact-us section.third-section {
+    --content-max-width: 1170px;
+}
+.contact-us section.third-section .section-content {
+    width: 100%;
+    gap: max(4rem, min(4.625rem, 5.139vw));
+    padding-top: 10.1875rem;
+    padding-bottom: 10.1875rem;
+}
+.contact-us section.third-section .section-content .section-header {
+    gap: 2rem;
+    width: 46.6598%;
+}
+.contact-us section.third-section .section-content .section-header h2 {
+    width: fit-content;
+    font-size: 30px;
+    line-height: 187.5%;
+    font-weight: 600;
+}
+.contact-us section.third-section .section-content .section-header span {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 187.5%;
+    font-weight: 400;
+}

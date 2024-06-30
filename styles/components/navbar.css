@@ -1,6 +1,7 @@
 .navbar {
     display: flex;
-    padding: 3rem 3.5rem 0 3rem;
+    grid-row-start: navigation-area-row;
+    grid-column: padding-start-column / padding-final-column;
     width: 100%;
     z-index: 1000;
     align-items: center;

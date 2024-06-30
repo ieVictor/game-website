@@ -1,0 +1,26 @@
+.section-list {
+    flex-wrap: wrap;
+    gap: 4%;
+    justify-content: center;
+}
+
+.section-list .list-item {
+    align-items: center;
+}
+
+.section-list .list-information {
+    padding-top: 10%;
+    align-items: center;
+    font-size: max(1.125rem, min(1.375rem, 1.528vw));
+    line-height: 187.5%;
+    gap: max(0.35rem ,min(0.563rem, 0.626vw));
+}
+
+.section-list .list-item img {
+    width: 100%;
+}
+
+.section-list .list-information img {
+    height: 25px;
+    width: 25px;
+}

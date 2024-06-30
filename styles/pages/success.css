@@ -1,0 +1,38 @@
+body#success {
+    background-color: #030027;
+} 
+
+body#success main {
+    height: 60vh;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+body#success main div {
+    color: #36827F;
+}
+
+body#success main.full-width.content-grid div.main-area div.user-information {
+    width: 50%;
+    gap: 1rem;
+}
+
+body#success strong {
+    color: #FFC81F;
+}
+
+body#success main div h1 {
+    -webkit-text-stroke: 2px #36827F;
+    color: transparent;
+    line-height: 100%;
+    font-size: 8rem;
+}
+
+body#success main span {
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+body#success main img {
+    width: 45%;
+}

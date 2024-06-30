@@ -1,0 +1,81 @@
+@media screen and (max-width: 1200px) {
+    .absolute { 
+        display: none;
+    }
+    section .section-left {
+        align-items: center;
+        justify-content: center;
+    }
+    section .section-left .section-text {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    section .section-left .section-text span   {
+        width: auto;
+    }
+
+    section .section-left .section-text h1 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header.navbar .navbar-itens {
+        display: none;
+    }
+
+    section .section-left .section-text span {
+        width: 80%;
+    }
+
+    .fifth-section .section-header {
+        width: 100%;
+    }
+    .fifth-section .section-content {
+        height: 54.3845%;
+        width: 100%;
+    }
+    
+    section.fifth-section .section-center .section-content .wrapper {
+        height: 100%;
+        gap: .5rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section.fifth-section .section-center .section-content .wrapper li {
+        width: 50%
+    }
+    section.fifth-section .section-center .section-content .wrapper li img {
+        width: 100%
+    }
+
+    .section-content .section-newsletter {
+        flex-direction: column;
+    }
+    
+    :root {
+        --fs-h1-font-minimum-size: 2rem;
+        --fs-h2-font-minimum-size: 1.175rem;
+        --fs-span-font-minimum-size: 1rem;
+
+        --ss-h1-font-minimum-size: 1.4rem;
+
+        --ts-h1-font-minimum-size: 1rem;
+        --ts-h2-font-minimum-size: 0.9rem;
+        --ts-p-font-minimum-size: 0.65rem;
+
+            
+        --frs-h1-font-minimum-size: 1.4rem;
+        --frs-span-font-minimum-size: 0.8rem;
+        --frs-item-minimum-size: 3.125rem;
+        --frs-item-description-minimum-size: .75rem;
+        --frs-item-image-minimum-sizeW: 1.125rem;
+        --frs-item-image-minimum-sizeH: .9375rem;
+
+        --ffs-h1-font-minimum-size: 2.5rem;
+        --ffs-span-font-minimum-size: 1rem;
+    } 
+}

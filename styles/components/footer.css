@@ -1,0 +1,74 @@
+footer {
+    width: 100%;
+    background-color: #070707;
+    grid-row-start: footer-area-row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer-upper-content {
+    width: 100%;
+    gap: 4.875rem;
+    padding: 4.6875rem 0 3.3125rem 0;
+    justify-content: center;
+}
+footer .footer-lower-content {
+    width: 100%;
+}
+footer h3 {
+    font-size: max(.9375rem, min(1.0625rem,1.181vw));
+    font-weight: 500;
+}
+footer span {
+    width: 100%;
+    font-weight: 400;
+    font-size: max(.9375rem, min(1rem, 1.111vw));
+}
+footer p {
+    width: fit-content;
+    font-weight: 400;
+    font-size: max(.9375rem, min(1rem, 1.111vw));
+}
+
+footer .footer-description {
+    width: 23.25rem;
+    gap: 1.5625rem;
+}
+.footer-about {
+    width: 8.875rem;
+    gap: 0.9375rem;
+}
+.footer-about .about-list {
+    gap: 1rem;
+}
+.footer-contact {
+    width: 17.9375rem;
+    gap: 1.25rem;
+}
+.footer-contact .contact-content {
+    gap: 0.6875rem;
+}
+.footer-social {
+    width: fit-content;
+    height: fit-content;
+    gap: 1rem;
+    align-items: center;
+    align-self: flex-end;
+}
+.footer-social .list-item {
+    display: flex;
+    width: 2.125rem; 
+    height: 2.125rem; 
+    color: black;
+    background-color: white;
+    border-radius: 9999px;
+}
+footer .copyright {
+    padding: 1.8125rem 0;
+    align-self: center;
+    justify-self: center;
+}
+hr {
+    width: 100%;
+
+}

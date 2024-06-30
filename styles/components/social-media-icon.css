@@ -1,0 +1,32 @@
+.social-media-icon-black {
+    display: flex;
+    background: black;
+    width: max(var(--frs-item-minimum-size), min(4.0625rem, 4.514vw));
+    height: max(var(--frs-item-minimum-size), min(4.0625rem, 4.514vw));
+    border-radius: 9999px;
+}
+.social-media-icon-black a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.social-media-icon-black a img {
+    width: min(50%, 2rem);
+}
+
+.social-media-icon-white {
+    background: white;
+    width: max(var(--frs-item-minimum-size), min(4.0625rem, 4.514vw));
+    height: max(var(--frs-item-minimum-size), min(4.0625rem, 4.514vw));
+    border-radius: 9999px;
+}
+.social-media-icon-white a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.social-media-icon-white a img {
+    width: min(50%, 2rem);
+}

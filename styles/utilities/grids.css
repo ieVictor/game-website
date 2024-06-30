@@ -1,0 +1,50 @@
+:root {
+    --content-max-width: 1147px;
+    --content-max-width-limited:
+        min(var(--content-max-width), 99.0625rem);
+
+    --app-padding-top: 36px;
+    --app-container-padding-start-row: 125px;
+    --app-container-padding-side: 55px;
+}
+
+#app {
+    display: grid;
+    overflow-x: hidden;
+    min-width: 100vw;
+    min-height: 100vh;
+    
+    padding-top: var(--app-padding-top);
+    column-gap: 0;
+    row-gap: 0;
+    margin: 0 auto;
+    grid-auto-columns: 1fr;
+
+    grid-template-rows: 
+    [navigation-area-row] auto
+    [padding-start-row] minmax(0, var(--app-container-padding-start-row)) 
+    [main-area-row] auto
+    [footer-area-row] auto; 
+}
+
+.content-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns:
+    [full-width-start-column] minmax(0, var(--app-container-padding-side))
+    [padding-start-column] minmax(0, 1fr)
+    [main-area-column] min(100% - var(--app-container-padding-side) * 2,var(--content-max-width))
+    [main-area-final-column] minmax(0, 1fr)
+    [padding-final-column] minmax(0, var(--app-container-padding-side))
+    [full-width-final-column];
+}
+
+.main-area {
+    grid-column: main-area-column / main-area-final-column;
+}
+
+.full-width {
+    grid-column-start: full-width-start-column;
+    grid-column-end: full-width-final-column;
+} 
+

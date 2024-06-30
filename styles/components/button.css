@@ -1,9 +1,11 @@
 button {
     font-family: var(--font-family-primary);
+    color: var(--text-default-color);
+    cursor: pointer;
+    width: fit-content;
 }
 
 .squared-button {
-    cursor: pointer;
     font-size: 13px;
     background-color: var(--button-background-color);
     border-style: none;
@@ -19,14 +21,18 @@ button {
     transition: .5s ease;
 }
 
+.squared-button:disabled {
+    opacity: .3;
+    pointer-events: none;
+    cursor: default;
+}
+
 .rounded-button {
     padding: 0.875rem 1.825rem;
     background: linear-gradient(-89deg, #FA8305, #FB9E3C);
     border-style: none;
-    cursor: pointer;
     font-size: 16px;
     border-radius: 5rem;
-    width: fit-content;
     transform: .5s ease;
 }
 
@@ -39,9 +45,6 @@ button {
 }
 
 .blue-button {
-    width: fit-content;
-    cursor: pointer;
-
     border-style: none;
     border-radius: 6px;
     
@@ -57,6 +60,31 @@ button {
 }
 
 .blue-button:hover {
+    border-style: solid;
+    border-color: white;
+    font-weight: bold;
+    transition: .5s ease;
+}
+.form-button {
+    margin-top: 1.9375rem;
+    width: 193px;
+    height: 56px;
+    background-color: var(--button-background-color);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    align-self: end;
+}
+.form-button:disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: .3;
+}
+.form-button:hover {
     border-style: solid;
     border-color: white;
     font-weight: bold;
