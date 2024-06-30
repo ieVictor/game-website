@@ -1,0 +1,29 @@
+body#error {
+    background-color: #030027;
+} 
+
+body#error main {
+    height: 60vh;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+body#error main div {
+    color: #ffc81f;
+}
+
+body#error main div h1 {
+    -webkit-text-stroke: 1px #ffc81f;
+    color: transparent;
+    line-height: 100%;
+    font-size: 8rem;
+}
+
+body#error main span {
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+body#error main img {
+    width: 50%;
+}

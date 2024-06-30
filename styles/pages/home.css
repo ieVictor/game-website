@@ -1,3 +1,7 @@
+body#home {
+    background: var(--background-gradient-color);
+}
+
 .absolute {
     position: absolute;
     right: -124px;

@@ -31,7 +31,6 @@
 body {
     color: var(--text-default-color);
     font-family: var(--font-family-default);
-    background: var(--background-gradient-color);
     overflow-x: hidden;
 }
 

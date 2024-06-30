@@ -6,6 +6,7 @@
 
 @import './pages/home.css';
 @import './pages/contact.css';
+@import './pages/error.css';
 
 @import './components/navbar.css';
 @import './components/button.css';
