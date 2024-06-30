@@ -23,12 +23,12 @@ form input:focus, form textarea:focus {
     background-color: rgba(20, 20, 20, .2);
 }
 form input.success, form textarea.success {
-    border: 1.5px solid greenyellow;
+    border: 2.5px solid greenyellow;
     background-color: rgb(48, 59, 30);
     transition: .5s ease;
 }
 form input.error, form textarea.error {
-    border: 1.5px solid darkred;
-    background-color: rgb(218, 93, 93);
+    border: 2.5px solid rgb(230, 0, 0);
+    background-color: #643c33;
     transition: .5s ease;
 }

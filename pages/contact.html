@@ -73,26 +73,27 @@
                         <h1>Say Hello</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing .</p>
                     </div>
-                    <form class="center-itens flex-column">
+                    <form id="page-form" class="center-itens flex-column" onsubmit="">
                         <div id="name-inputs" class="flex-row">
                             <div class="flex-column">
                                 <label>First Name</label>
-                                <input type="text" name="first-name" class="input">
+                                <input type="text" name="first-name" class="input" onblur="checkName(this); validateForm()">
                             </div>
                             <div class="flex-column">
                                 <label>Last Name</label>
-                                <input type="text" name="last-name" class="input">
+                                <input type="text" name="last-name" class="input" onblur="checkName(this); validateForm()">
                             </div>
                         </div>
                         <div class="flex-column">
                             <label for="email">Email Address</label>
-                            <input type="email" name="email">
+                            <input type="email" name="email" class="input" onblur="checkEmail(this); validateForm()">
                         </div>
                         <div class="flex-column">
                             <label for="message">Message</label>
-                            <textarea name="message" id="message"></textarea>
+                            <textarea name="message" id="message" minlength="10" onblur="checkTextField(this); validateForm()">
+                            </textarea>
                         </div>
-                        <button class="form-button" type="submit" disabled>Get in touch</button>
+                        <button id="form-button" class="form-button" type="submit" disabled>Get in touch</button>
                     </form>
                 </div>
                 <img id="line-bottom" src="../assets/images/line-bottom.png" alt="">
@@ -175,5 +176,6 @@
             </div>
         </footer>
     </div>
+    <script src="../scripts/form-validation.js"></script>
 </body>
 </html>
