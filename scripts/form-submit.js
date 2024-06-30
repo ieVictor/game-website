@@ -7,7 +7,7 @@ function addToStorage(message) {
 function submitForm() {
     const message = {
         firstname: document.getElementById("first-name").value,
-        lastName: document.getElementById("last-name").value,
+        lastname: document.getElementById("last-name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value
     }

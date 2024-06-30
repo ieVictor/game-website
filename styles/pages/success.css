@@ -12,6 +12,15 @@ body#success main div {
     color: #36827F;
 }
 
+body#success main.full-width.content-grid div.main-area div.user-information {
+    width: 50%;
+    gap: 1rem;
+}
+
+body#success strong {
+    color: #FFC81F;
+}
+
 body#success main div h1 {
     -webkit-text-stroke: 2px #36827F;
     color: transparent;
@@ -25,5 +34,5 @@ body#success main span {
 }
 
 body#success main img {
-    width: 50%;
+    width: 45%;
 }
