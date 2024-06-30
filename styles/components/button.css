@@ -21,6 +21,12 @@ button {
     transition: .5s ease;
 }
 
+.squared-button:disabled {
+    opacity: .3;
+    pointer-events: none;
+    cursor: default;
+}
+
 .rounded-button {
     padding: 0.875rem 1.825rem;
     background: linear-gradient(-89deg, #FA8305, #FB9E3C);

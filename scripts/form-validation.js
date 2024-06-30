@@ -1,8 +1,25 @@
 const validEmail = /^[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*@[a-zA-Z0-9]+(?:\.[a-zA-Z0-9]+)*$/;
 const validName = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/;
-const form = document.getElementById("page-form");
-const formInputs = form.querySelectorAll("input, textarea");
-const formButton = document.getElementById("form-button")
+const username = document.getElementById("page-form").querySelectorAll("input#first-name, input#last-name");
+const email = document.getElementById("email");
+const textarea = document.getElementById("message");
+
+username.forEach(input => {
+    input.addEventListener("blur", () => {
+        checkName(input);
+        validateForm();
+    })
+})
+
+email.addEventListener("blur", () => {
+    checkEmail(email);
+    validateForm();
+})
+
+textarea.addEventListener("blur", () => {
+    checkTextField(textarea);
+    validateForm();
+})
 
 function checkNoValue(event) {
     if (event.value.trim().length === 0) {
@@ -46,6 +63,9 @@ function checkTextField(event) {
 
 function validateForm() {
     let filled = true;
+    const formInputs = document.getElementById("page-form").querySelectorAll("input, textarea");
+    const formButton = document.getElementById("form-button");
+
     formInputs.forEach(input => {
         if(input.getAttribute("class") !== "success") filled = false;
     })
@@ -54,6 +74,7 @@ function validateForm() {
         formButton.disabled = false;
         return;
     }
-
+    
     formButton.disabled = true;
 }
+

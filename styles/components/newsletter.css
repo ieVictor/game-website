@@ -41,6 +41,14 @@
 } 
 .newsletter-form input::placeholder {
     color: #898989;
+}
+.newsletter-form input.success {
+    color: rgb(48, 59, 30);
+    transition: .5s ease;
+}
+.newsletter-form input.error {
+    color: rgb(230, 0, 0);
+    transition: .5s ease;
 }   
 
 @media screen and (max-width: 900px) {

@@ -13,15 +13,15 @@
 <body>
     <div id="app" class="content-grid home">
         <header class="navbar">
-            <a href="#" class="logo">LOGO</a>
+            <a href="./home.html" class="logo">LOGO</a>
             <div class="navbar-itens">
                 <ul>
                     <li><a href="./home.html">Home</a></li>
-                    <li><a href="./contact.html">About us</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="./error.html">About us</a></li>
+                    <li><a href="./error.html">Portfolio</a></li>
+                    <li><a href="./error.html">News</a></li>
                 </ul>
-                <button class="squared-button" type="button">Contact Us</button>
+                <button class="squared-button" type="button" onclick="goToContact()">Contact Us</button>
             </div>
         </header>
         <main class="full-width content-grid">  
@@ -39,14 +39,14 @@
                             the industry's standard.
                         </span>
                     </div>
-                    <button class="rounded-button" type="button">Get more details</button>
+                    <button class="rounded-button" type="button" onclick="goToError()">Get more details</button>
                 </div>
             </section>
             <section class="second-section full-width content-grid">
                 <div class="section-center main-area flex-column">
                     <div class="justify-between flex-row">
                         <h1 id="currently-tg-title">Currently Trending Games</h1>
-                        <button class="blue-button" type="button">see all</button>
+                        <button class="blue-button" type="button" onclick="goToError()">see all</button>
                     </div>
                     <ul class="section-list flex-row">
                         <li class="list-item flex-column">
@@ -187,7 +187,7 @@
                             <li><img src="../assets/images/fliperama3.png" alt=""></li>
                         </div>
                     </ul>
-                    <button class="blue-button" type="button">see all</button>
+                    <button class="blue-button" type="button" onclick="goToError()">see all</button>
                 </div>
             </section>
             <section class="sixth-section full-width content-grid">
@@ -208,8 +208,8 @@
                             </span>
                         </div>
                         <div class="newsletter-form flex-row">
-                            <input type="email" name="email" id="email" placeholder="Enter email address">
-                            <button class="squared-button" type="button">Continue</button>
+                            <input type="email" name="email" class="input" id="newsletter-email" placeholder="Enter email address">
+                            <button id="newsletter-button" class="squared-button" type="button" onclick="submitNewsletter()" disabled>Continue</button>
                         </div>
                     </div>
                 </div>
@@ -230,10 +230,10 @@
                 <div class="footer-about flex-column">
                     <h3>About us</h3>
                     <ul class="about-list flex-column">
-                        <li>Zeux</li>
-                        <li>Portfolio</li>
-                        <li>Careers</li>
-                        <li>Contact us</li>
+                        <li><a href="./error.html">Zeux</a></li>
+                        <li><a href="./error.html">Portfolio</a></li>
+                        <li><a href="./error.html">Careers</a></li>
+                        <li><a href="./error.html">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact flex-column">
@@ -267,6 +267,8 @@
             </div>
         </footer>
     </div>
-    <script src="../scripts/form-validation.js"></script>
+    <script src="../scripts/newsletter-validation.js"></script>
+    <script src="../scripts/newsletter-submit.js"></script>
+    <script src="../scripts/buttons.js"></script>
 </body>
 </html>

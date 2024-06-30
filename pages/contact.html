@@ -13,15 +13,15 @@
 <body id="contact">
     <div id="app" class="content-grid full-width contact-us">
         <header class="navbar">
-            <a href="#" class="logo">LOGO</a>
+            <a href="./home.html" class="logo">LOGO</a>
             <div class="navbar-itens">
                 <ul>
                     <li><a href="./home.html">Home</a></li>
-                    <li><a href="./contact.html">About us</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">News</a></li>
+                    <li><a href="./error.html">About us</a></li>
+                    <li><a href="./error.html">Portfolio</a></li>
+                    <li><a href="./error.html">News</a></li>
                 </ul>
-                <button class="squared-button" type="button">Contact Us</button>
+                <button class="squared-button" type="button" onclick="goToContact()">Contact Us</button>
             </div>
         </header>
         <main class="full-width content-grid">
@@ -73,27 +73,26 @@
                         <h1>Say Hello</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing .</p>
                     </div>
-                    <form id="page-form" class="center-itens flex-column" onsubmit="">
+                    <form id="page-form" class="center-itens flex-column">
                         <div id="name-inputs" class="flex-row">
                             <div class="flex-column">
                                 <label>First Name</label>
-                                <input type="text" name="first-name" class="input" onblur="checkName(this); validateForm()">
+                                <input type="text" id="first-name" name="first-name" class="input">
                             </div>
                             <div class="flex-column">
                                 <label>Last Name</label>
-                                <input type="text" name="last-name" class="input" onblur="checkName(this); validateForm()">
+                                <input type="text" id="last-name" name="last-name" class="input">
                             </div>
                         </div>
                         <div class="flex-column">
                             <label for="email">Email Address</label>
-                            <input type="email" name="email" class="input" onblur="checkEmail(this); validateForm()">
+                            <input type="email" id="email" name="email" class="input">
                         </div>
                         <div class="flex-column">
                             <label for="message">Message</label>
-                            <textarea name="message" id="message" minlength="10" onblur="checkTextField(this); validateForm()">
-                            </textarea>
+                            <textarea name="message" id="message" minlength="10"></textarea>
                         </div>
-                        <button id="form-button" class="form-button" type="submit" disabled>Get in touch</button>
+                        <button id="form-button" class="form-button" type="button" onclick="submitForm()" disabled>Get in touch</button>
                     </form>
                 </div>
                 <img id="line-bottom" src="../assets/images/line-bottom.png" alt="">
@@ -117,8 +116,8 @@
                             </span>
                         </div>
                         <div class="newsletter-form flex-row">
-                            <input type="email" name="email" id="email" placeholder="Enter email address">
-                            <button class="squared-button" type="button">Continue</button>
+                            <input type="email" name="email" class="input" id="newsletter-email" placeholder="Enter email address">
+                            <button id="newsletter-button" class="squared-button" type="button" onclick="submitNewsletter()" disabled>Continue</button>
                         </div>
                     </div>
                 </div>
@@ -139,10 +138,10 @@
                 <div class="footer-about flex-column">
                     <h3>About us</h3>
                     <ul class="about-list flex-column">
-                        <li>Zeux</li>
-                        <li>Portfolio</li>
-                        <li>Careers</li>
-                        <li>Contact us</li>
+                        <li><a href="./error.html">Zeux</a></li>
+                        <li><a href="./error.html">Portfolio</a></li>
+                        <li><a href="./error.html">Careers</a></li>
+                        <li><a href="./error.html">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact flex-column">
@@ -176,6 +175,10 @@
             </div>
         </footer>
     </div>
+    <script src="../scripts/newsletter-validation.js"></script>
+    <script src="../scripts/newsletter-submit.js"></script>
     <script src="../scripts/form-validation.js"></script>
+    <script src="../scripts/form-submit.js"></script>
+    <script src="../scripts/buttons.js"></script>
 </body>
 </html>
