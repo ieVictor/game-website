@@ -59,3 +59,28 @@ button {
     font-weight: bold;
     transition: .5s ease;
 }
+.form-button {
+    margin-top: 1.9375rem;
+    width: 193px;
+    height: 56px;
+    background-color: var(--button-background-color);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    align-self: end;
+}
+.form-button:disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: .3;
+}
+.form-button:hover {
+    border-style: solid;
+    border-color: white;
+    font-weight: bold;
+    transition: .5s ease;
+}

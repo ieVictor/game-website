@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <title>📱 Contact-us</title>
 </head>
-<body>
-    <div id="app" class="content-grid contact-us">
+<body id="contact">
+    <div id="app" class="content-grid full-width contact-us">
         <header class="navbar">
             <a href="#" class="logo">LOGO</a>
             <div class="navbar-itens">
@@ -24,9 +24,9 @@
                 <button class="squared-button" type="button">Contact Us</button>
             </div>
         </header>
-        <main>
-            <section class="first-section section-grid-xl flex-column">
-                <div class="section-content flex-column grid-center">
+        <main class="full-width content-grid">
+            <section class="first-section full-width content-grid flex-column">
+                <div class="section-content flex-column main-area">
                     <div class="section-header flex-column">
                         <p>Home > <span style="color: #E47500;">Contact us</span></p>
                         <h1>Lorem Ipsum is simply dummy text of the printing and.</h1>
@@ -67,8 +67,8 @@
                     </div>
                 </div>
             </section>
-            <section class="second-section section-grid-xl flex-column">
-                <div class="section-content center-itens grid-center flex-column">
+            <section class="second-section full-width content-grid flex-column">
+                <div class="section-content center-itens main-area flex-column">
                     <div class="section-header">
                         <h1>Say Hello</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing .</p>
@@ -92,22 +92,18 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="message"></textarea>
                         </div>
-                        <button type="submit">Get in touch</button>
+                        <button class="form-button" type="submit" disabled>Get in touch</button>
                     </form>
-                    <div class="custom-background">
-                        <div class="background-wrapper">
-                            <img id="line-bottom" src="../assets/images/line-bottom.png" alt="">
-                            <img id="line-upper" src="../assets/images/line-upper.png" alt="">
-                        </div>
-                    </div>
                 </div>
+                <img id="line-bottom" src="../assets/images/line-bottom.png" alt="">
+                <img id="line-upper" src="../assets/images/line-upper.png" alt="">
             </section>
-            <section class="third-section section-grid-xl">
-                <div class="section-content flex-column grid-center">
+            <section class="third-section full-width content-grid">
+                <div class="section-content flex-column main-area">
                     <div class="section-header flex-column">
                         <h1>Lorem Ipsum</h1>
                         <span>
-                            Lorem Ipsum is simply dummy text of the printing and
+                         Lorem Ipsum is simply dummy text of the printing and
                             typesetting industry.
                         </span>
                     </div>
@@ -127,8 +123,8 @@
                 </div>
             </section>
         </main>
-        <footer class="footer-grid">
-            <div class="footer-upper-content flex-row">                
+        <footer class="content-grid full-width">
+            <div class="footer-upper-content main-area flex-row">                
                 <div class="footer-description flex-column">
                     <div class="description-header flex-column">
                         <h1>LOGO</h1>
@@ -173,8 +169,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-lower-content flex-row center-itens">
-                <p class="copyright">Copyright ® 2022 prodesigner All rights Rcerved</p> 
+            <div class="footer-lower-content flex-column center-itens full-width">
+                <hr>        
+                <p class="copyright">Copyright ® 2022 prodesigner All rights Rcerved</p>   
             </div>
         </footer>
     </div>

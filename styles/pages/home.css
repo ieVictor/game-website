@@ -1,6 +1,6 @@
 .absolute {
     position: absolute;
-    right: -180px;
+    right: -124px;
     top: -203px;
     pointer-events: none;
     z-index: -1;
@@ -45,8 +45,6 @@
 /* ---------------------------- */
 .home section.second-section {
     font-family: var(--font-family-secondary);
-    grid-column-start: main-area-column;
-    grid-row-start: main-area-row;
     padding-bottom: 8rem;
 }
 .home section.second-section .section-center {
@@ -120,9 +118,16 @@
 
 /* ---------------------------------------- */
 .home section.forth-section {
-    height: max(60.6944vw, 97.1111vh);
-    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/images/dark-background.png");
+    background-size: cover;
+    z-index: -1;
 }
+.home section.forth-section .section-content.main-area {
+    padding-top: 5.875rem;
+    padding-bottom: 5.25rem;
+} 
 .home section.forth-section .section-content {
     flex-wrap: wrap;
     gap: min(6.25rem, 6.944vw);
@@ -170,17 +175,6 @@
     width: max(var(--frs-item-image-minimum-sizeW), min(1.3125rem, 1.458vw));
     height: max(var(--frs-item-image-minimum-sizeH), min(1.125rem, 1.25vw));
 }
-.background-image {
-    position: absolute;
-    width: 110vw;
-    height: max(60.6944vw, 97.1111vh);
-    top: 0;
-    left: -12vw;
-    background-image: url("../../assets/images/dark-background.png");
-    background-size: cover;
-    background-position: center left;
-    z-index: -1;
-}
 @media only screen and (min-width: 1720px) and (max-width: 1920px) {
     .background-image {
         width: 120vw;
@@ -190,6 +184,7 @@
 
 /* ---------------------------------- */
 .home section.fifth-section {
+    --content-max-width: 73.125rem;
     padding-top: 9.25rem;
     padding-bottom: 6.5625rem;
 }
@@ -228,6 +223,7 @@
 
 /* ---------------------------- */
 .home section.sixth-section .section-content {
+    --content-max-width: 73.125rem;
     width: 100%;
     gap: max(4rem, min(4.625rem, 5.139vw));
     padding-bottom: 10.1875rem;
