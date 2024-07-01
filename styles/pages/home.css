@@ -9,7 +9,6 @@ body#home {
     pointer-events: none;
     z-index: -1;
 }
-/* ---------------------------- */
 .home section.first-section {
     position: relative;
     padding-bottom: 11.25rem;
@@ -46,7 +45,7 @@ body#home {
     line-height: 200%;
 }
 
-/* ---------------------------- */
+
 .home section.second-section {
     font-family: var(--font-family-secondary);
     padding-bottom: 8rem;
@@ -59,7 +58,7 @@ body#home {
     line-height: 187.5%;
 }
 
-/* -------------------------------- */
+
 .home section.third-section {
     height: max(86.6146vw, 23.6904vh);
 }
@@ -120,7 +119,7 @@ body#home {
     z-index: -1;
 }
 
-/* ---------------------------------------- */
+
 .home section.forth-section {
     height: 100%;
     width: 100%;
@@ -186,7 +185,7 @@ body#home {
     }
 }
 
-/* ---------------------------------- */
+
 .home section.fifth-section {
     --content-max-width: 73.125rem;
     padding-top: 9.25rem;
@@ -225,7 +224,7 @@ body#home {
     align-items: center;
 }
 
-/* ---------------------------- */
+
 .home section.sixth-section .section-content {
     --content-max-width: 73.125rem;
     width: 100%;
