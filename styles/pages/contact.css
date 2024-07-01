@@ -17,16 +17,16 @@ body#contact {
     gap: 14px;
     padding-bottom: 1.9375rem;
 }
-div.section-content .section-header h1 { 
+.contact-us section.first-section div.section-content .section-header h2 { 
     font-size: clamp(1.75rem, 2.292vw, 2.2625rem);
     font-weight: 600;
 }
-div.section-content .section-header p {
+.contact-us section.first-section div.section-content .section-header p {
     font-size: clamp(0.8rem, 1.111vw, 1.2rem);
     font-weight: 400;
     line-height: 208.05%;
 }
-div.section-content .section-header span {
+.contact-us section.first-section .section-content .section-header span {
     font-size: clamp(0.8rem, 1.111vw, 1.2rem);
     line-height: 185.5%;
     font-weight: 500;
@@ -96,7 +96,7 @@ div.location {
 .contact-us section.second-section .section-header {
     text-align: center;
 }
-.contact-us section.second-section .section-header h1 {
+.contact-us section.second-section .section-header h2 {
     font-size: clamp(1.625rem, 2.083vw, 2rem);
     font-weight: 400;
     line-height: 189.5%;
@@ -106,7 +106,7 @@ div.location {
     font-weight: 500;
     line-height: 189.5%;
 }
-section.second-section #line-upper {
+.contact-us section.second-section #line-upper {
     position: absolute;
     top: 0;
     right: 0;
