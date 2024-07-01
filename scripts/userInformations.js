@@ -7,14 +7,14 @@ function setUserInformations() {
 
     text.innerHTML =
         `
-            <strong>${data.firstname + " " + data.lastname}</strong>, agradecemos
-            pela mensagem enviada! Em brevo entraremos
-            em contato pelo email <strong>${data.email}</strong>! 
+            <strong>${data.firstname.trim() + " " + data.lastname.trim()}</strong>, thank you 
+            for your message! We will contact you shortly
+            contact by email <strong>${data.email}</strong>!
         `
 
     userMessage.innerHTML =
         `
-            <strong>Mensagem: </strong>${data.message.trim()}
+            <strong>Message: </strong>${data.message.trim()}
         ` 
 }
 
