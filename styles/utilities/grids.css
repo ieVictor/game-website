@@ -1,8 +1,6 @@
 :root {
+    --default-screen-size: 1440px;
     --content-max-width: 1147px;
-    --content-max-width-limited:
-        min(var(--content-max-width), 99.0625rem);
-
     --app-padding-top: 36px;
     --app-container-padding-start-row: 125px;
     --app-container-padding-side: 55px;
@@ -33,7 +31,7 @@
     grid-template-columns:
     [full-width-start-column] minmax(0, var(--app-container-padding-side))
     [padding-start-column] minmax(0, 1fr)
-    [main-area-column] min(100% - var(--app-container-padding-side) * 2,var(--content-max-width))
+    [main-area-column] min(100% - var(--app-container-padding-side) * 2, var(--content-max-width))
     [main-area-final-column] minmax(0, 1fr)
     [padding-final-column] minmax(0, var(--app-container-padding-side))
     [full-width-final-column];
@@ -48,3 +46,18 @@
     grid-column-end: full-width-final-column;
 } 
 
+@media screen and (max-width: 1280px) {
+    :root {
+        --content-max-width: calc(1147px - (var(--default-screen-size) - 1280px));
+    }
+}
+@media screen and (min-width: 1536px) {
+    :root {
+        --content-max-width: calc(1147px + (1536px - var(--default-screen-size)));
+    }
+}
+@media screen and (min-width: 1800px) {
+    :root {
+        --content-max-width: calc(1147px + (1800px - var(--default-screen-size)));
+    }
+}
