@@ -2,51 +2,46 @@ body#home {
     background: var(--background-gradient-color);
 }
 
-.absolute {
+.home section.first-section img.absolute {
     position: absolute;
     right: -124px;
     top: -203px;
     pointer-events: none;
     z-index: -1;
 }
-/* ---------------------------- */
 .home section.first-section {
     position: relative;
     padding-bottom: 11.25rem;
 }
-.home section .section-left {
+.home section.first-section .section-content {
     align-items: start;
     gap: 3.125rem;
 }
-.home section .section-left .section-text {
-    width: 46.0664%;
-    gap: 1.625rem;
+.home section.first-section .section-content .section-text {
+    width: clamp(46.0664%, 27.5vw, 60%); 
+    gap: min(1.625rem, calc(2.736rem - 1vw));
 }
 .section-text .section-title {
     line-height: 155.2%;
     gap: 1.063rem;
 }
-.home section .section-left h1 {
-    width: 76.8501%;
-    font-size: 
-        max(var(--fs-h1-font-minimum-size), min(3.472vw, 70px));
+.home section.first-section .section-content h1 {
+    font-size: clamp(var(--ffs-h1-font-minimum-size), 3.472vw, 3.75rem);
     line-height: 155.2%;
 }
-.home section .section-left h2 {
-    font-size: 
-        max(var(--fs-h2-font-minimum-size), min(1.389vw, 40px));
+.home section.first-section .section-content h2 {
+    font-size: clamp(var(--fs-h2-font-minimum-size), 1.389vw, 1.625rem);
     color: var(--text-secondary-color);
     -webkit-text-stroke: 1px black;
 }
-.home section .section-left span {
+.home section.first-section .section-content span {
     width: 100%;
     font-weight: 500;
-    font-size: 
-        max(var(--fs-span-font-minimum-size), min(1.111vw, 36px));
+    font-size: clamp(var(--fs-span-font-minumum-size), 1.111vw, 1.25rem);
     line-height: 200%;
 }
 
-/* ---------------------------- */
+
 .home section.second-section {
     font-family: var(--font-family-secondary);
     padding-bottom: 8rem;
@@ -55,11 +50,11 @@ body#home {
     gap: 3.563rem;
 }
 #currently-tg-title {
-    font-size: max(var(--ss-h1-font-minimum-size), min(1.938rem, 2.153vw));
+    font-size: clamp(var(--ss-h1-font-minimum-size), 2.153vw, 2.3rem);
     line-height: 187.5%;
 }
 
-/* -------------------------------- */
+
 .home section.third-section {
     height: max(86.6146vw, 23.6904vh);
 }
@@ -71,19 +66,19 @@ body#home {
 .home section.third-section .section-content h1 {
     text-align: center;
     line-height: 187.5%;
-    font-size: max(var(--ts-h1-font-minimum-size), min(2.431vw, 2.1875rem));
+    font-size: clamp(var(--ts-h1-font-minimum-size), 2.431vw, 2.6rem);
     font-weight: 600;
     width: 72.0768%;
 }
 .home section.third-section .section-content .section-description h2 {
     line-height: 187.5%;
-    font-size: max(var(--ts-h2-font-minimum-size), min(2.083vw, 1.875rem));
+    font-size: clamp(var(--ts-h2-font-minimum-size), 2.083vw, 2.3rem);
     font-weight: 600;
 }
 .home section.third-section .section-content .section-description p {
     width: 100%;
     line-height: 187.5%;
-    font-size: max(var(--ts-p-font-minimum-size), min(1.111vw, 1rem));
+    font-size: clamp(var(--ts-p-font-minimum-size), 1.111vw, 1.3rem);
     font-weight: 400;
 }
 .home section.third-section .section-content .section-description {
@@ -120,7 +115,7 @@ body#home {
     z-index: -1;
 }
 
-/* ---------------------------------------- */
+
 .home section.forth-section {
     height: 100%;
     width: 100%;
@@ -142,14 +137,14 @@ body#home {
     gap: min(1.56rem, 1.733vw);
 }
 .home section.forth-section .section-content h1 {
-    font-size: max(var(--frs-h1-font-minimum-size), min(1.875rem, 2.083vw));
+    font-size: clamp(var(--frs-h1-font-minimum-size), 2.083vw, 2.2rem);
     width: min(50rem, 55.556vw);
     line-height: 187.5%;
     text-align: center;
 }
 .home section.forth-section .section-content span {
     text-align: center;
-    font-size: max(var(--frs-span-font-minimum-size), min(1rem, 1.111vw));
+    font-size: clamp(var(--frs-span-font-minimum-size), 1.111vw, 1.2rem);
     font-weight: 400;
     line-height: 185.5%;
     width: min(51.25rem, 56.944vw);
@@ -173,20 +168,14 @@ body#home {
     align-items: center;
 }
 .list-item .item-description p {
-    font-size: max(var(--frs-item-description-minimum-size), min(1rem, 1.111vw));
+    font-size: clamp(var(--frs-item-description-minimum-size), 1.111vw, 1.2rem);
 }
 .list-item .item-description img {
     width: max(var(--frs-item-image-minimum-sizeW), min(1.3125rem, 1.458vw));
     height: max(var(--frs-item-image-minimum-sizeH), min(1.125rem, 1.25vw));
 }
-@media only screen and (min-width: 1720px) and (max-width: 1920px) {
-    .background-image {
-        width: 120vw;
-        left: -20vw;
-    }
-}
 
-/* ---------------------------------- */
+
 .home section.fifth-section {
     --content-max-width: 73.125rem;
     padding-top: 9.25rem;
@@ -202,12 +191,12 @@ body#home {
     width: 42.8071%;
 }
 .home section.fifth-section .section-header h1 {
-    font-size: max(var(--ffs-h1-font-minimum-size), min(1.875rem, 2.083vw));
+    font-size: clamp(var(--ffs-h1-font-minimum-size), 2.083vw, 2.2rem);
     font-weight: bold;
     line-height: 187.5%;
 }
 .home section.fifth-section .section-header span {
-    font-size: max(var(--ffs-span-font-minimum-size), min(0.875rem, 0.972vw));
+    font-size: clamp(var(--ffs-span-font-minimum-size), 0.972vw, 1.1rem);
     font-weight: 400;
     line-height: 187.5%;
     width: 100%;
@@ -225,7 +214,7 @@ body#home {
     align-items: center;
 }
 
-/* ---------------------------- */
+
 .home section.sixth-section .section-content {
     --content-max-width: 73.125rem;
     width: 100%;
@@ -238,13 +227,13 @@ body#home {
 }
 .home section.sixth-section .section-content .section-header h2 {
     width: fit-content;
-    font-size: 30px;
+    font-size: clamp(var(--sx-h2-font-minimum-size), 2.083vw, 2rem);
     line-height: 187.5%;
     font-weight: 600;
 }
 .home section.sixth-section .section-content .section-header span {
     width: 100%;
-    font-size: 1rem;
+    font-size: clamp(var(--sx-span-font-minimum-size), 1.111vw, 1rem);
     line-height: 187.5%;
     font-weight: 400;
 }

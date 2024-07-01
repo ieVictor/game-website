@@ -16,12 +16,12 @@ body#error main div h1 {
     -webkit-text-stroke: 1px #ffc81f;
     color: transparent;
     line-height: 100%;
-    font-size: 8rem;
+    font-size: clamp(7.5rem, 8.888vw, 8rem);
 }
 
 body#error main span {
     text-align: center;
-    font-size: 1.125rem;
+    font-size: clamp(.9rem, 1.25vw, 1.125rem);
 }
 
 body#error main img {
