@@ -18,21 +18,21 @@ body#contact {
     padding-bottom: 1.9375rem;
 }
 div.section-content .section-header h1 { 
-    font-size: max(28px, min(33px, 2.292vw));
+    font-size: clamp(1.75rem, 2.292vw, 2.2625rem);
     font-weight: 600;
 }
 div.section-content .section-header p {
-    font-size: max(12.8px, min(16px, 1.111vw));
+    font-size: clamp(0.8rem, 1.111vw, 1.2rem);
     font-weight: 400;
     line-height: 208.05%;
 }
 div.section-content .section-header span {
-    font-size: max(12.8px, min(16px, 1.111vw));
+    font-size: clamp(0.8rem, 1.111vw, 1.2rem);
     line-height: 185.5%;
     font-weight: 500;
 }
 .contact-us section.first-section div.section-content div.section-information {
-    font-size: max(16px, min(20px, 1.389vw));
+    font-size: clamp(1rem, 1.389vw, 1.45rem);
     font-weight: 300;
     width: 100%;
     align-items: center;
@@ -48,9 +48,10 @@ div.follow-us {
     gap: 1.125rem;
 }
 div.follow-us p {
-    font-size: max(12px,min(16px, 1.111vw));
+    font-size: clamp(0.75rem, 1.111vw, 1.2em);
     width: max-content;
 }
+
 ul.social-media {
     width: fit-content;
     gap: 1rem;
@@ -96,12 +97,12 @@ div.location {
     text-align: center;
 }
 .contact-us section.second-section .section-header h1 {
-    font-size: max(1.625rem, min(1.875rem, 2.083vw));
+    font-size: clamp(1.625rem, 2.083vw, 2rem);
     font-weight: 400;
     line-height: 189.5%;
 }
 .contact-us section.second-section .section-header p {
-    font-size: max(.625rem, min(.8125rem, 0.903vw));
+    font-size: clamp(0.625rem, 0.903vw, 1rem);
     font-weight: 500;
     line-height: 189.5%;
 }
@@ -122,6 +123,7 @@ form #name-inputs {
     gap: 1.6875rem;
 }
 
+
 .contact-us section.third-section {
     --content-max-width: 1170px;
 }
@@ -137,13 +139,13 @@ form #name-inputs {
 }
 .contact-us section.third-section .section-content .section-header h2 {
     width: fit-content;
-    font-size: 30px;
+    font-size: clamp(1.675rem, 2.083vw, 1.875rem);
     line-height: 187.5%;
     font-weight: 600;
 }
 .contact-us section.third-section .section-content .section-header span {
     width: 100%;
-    font-size: 1rem;
+    font-size: clamp(.8rem, 1.111vw, 1rem);
     line-height: 187.5%;
     font-weight: 400;
 }
