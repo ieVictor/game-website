@@ -2,7 +2,7 @@
 
 # Compass UOL - First Challenge
 
-Este projeto envolveu a criação de duas landing pages, com o intuito de por em prática técnicas de HTML, CSS & JavaScript.
+This project involved the creation of two landing pages, with the aim of putting `HTML, CSS & JavaScript` techniques into practice.
 
 ## Header & Footer
 
@@ -10,7 +10,7 @@ Este projeto envolveu a criação de duas landing pages, com o intuito de por em
     - The Header should be on both pages, containing the 'LOGO' and all the links as in the figma (Home/About us/Portfolio/News/Contact us);
     - The 'Home' button should go to the first page and the 'Contact us' button should go to the second page, the other buttons should go to the error page (explained in the mandatory requirements).
 - **Footer**
-    - The Footer should be on both pages, with a design faithful to Figma; 
+    - The Footer should be on both pages, with a design faithful to `Figma`; 
     - The 'Facebook', 'Instagram', 'Twitter' and 'LinkedIn' icons should be clickable, leading to the homepage of each social network;
     - The Footer link for 'Contact us' should go to the second page, the other buttons should go to the error page.
 
