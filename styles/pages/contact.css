@@ -17,7 +17,7 @@ body#contact {
     gap: 14px;
     padding-bottom: 1.9375rem;
 }
-div.section-content .section-header h1 { 
+div.section-content .section-header h2 { 
     font-size: clamp(1.75rem, 2.292vw, 2.2625rem);
     font-weight: 600;
 }
@@ -96,7 +96,7 @@ div.location {
 .contact-us section.second-section .section-header {
     text-align: center;
 }
-.contact-us section.second-section .section-header h1 {
+.contact-us section.second-section .section-header h2 {
     font-size: clamp(1.625rem, 2.083vw, 2rem);
     font-weight: 400;
     line-height: 189.5%;
