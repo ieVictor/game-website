@@ -1,23 +1,23 @@
 :root {
-    --fs-h1-font-minimum-size: 3rem;
-    --fs-h2-font-minimum-size: 1rem;
+    --fs-h2-font-minimum-size: 3rem;
+    --fs-h3-font-minimum-size: 1rem;
     --fs-span-font-minimum-size: 1.125rem;
     
-    --ss-h1-font-minimum-size: 1.5rem;
+    --ss-h2-font-minimum-size: 1.5rem;
 
-    --ts-h1-font-minimum-size: 1.1rem;
-    --ts-h2-font-minimum-size: .9375rem;
+    --ts-h2-font-minimum-size: 1.1rem;
+    --ts-h3-font-minimum-size: .9375rem;
     --ts-p-font-minimum-size: 0.7rem;
 
     
-    --frs-h1-font-minimum-size: 1.625rem;
+    --frs-h2-font-minimum-size: 1.625rem;
     --frs-span-font-minimum-size: 0.875rem;
     --frs-item-minimum-size: 3.125rem;
     --frs-item-description-minimum-size: .75rem;
     --frs-item-image-minimum-sizeW: 1.125rem;
     --frs-item-image-minimum-sizeH: .9375rem;
 
-    --ffs-h1-font-minimum-size: 1.625rem;
+    --ffs-h2-font-minimum-size: 1.625rem;
     --ffs-span-font-minimum-size: .75rem;
 
     --sx-h2-font-minimum-size: 1.75rem;

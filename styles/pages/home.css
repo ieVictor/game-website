@@ -25,12 +25,12 @@ body#home {
     line-height: 155.2%;
     gap: 1.063rem;
 }
-.home section.first-section .section-content h1 {
-    font-size: clamp(var(--ffs-h1-font-minimum-size), 3.472vw, 3.75rem);
+.home section.first-section .section-content h2 {
+    font-size: clamp(var(--fs-h2-font-minimum-size), 3.472vw, 3.75rem);
     line-height: 155.2%;
 }
-.home section.first-section .section-content h2 {
-    font-size: clamp(var(--fs-h2-font-minimum-size), 1.389vw, 1.625rem);
+.home section.first-section .section-content h3 {
+    font-size: clamp(var(--fs-h3-font-minimum-size), 1.389vw, 1.625rem);
     color: var(--text-secondary-color);
     -webkit-text-stroke: 1px black;
 }
@@ -50,7 +50,7 @@ body#home {
     gap: 3.563rem;
 }
 #currently-tg-title {
-    font-size: clamp(var(--ss-h1-font-minimum-size), 2.153vw, 2.3rem);
+    font-size: clamp(var(--ss-h2-font-minimum-size), 2.153vw, 2.3rem);
     line-height: 187.5%;
 }
 
@@ -63,16 +63,16 @@ body#home {
     align-items: center;
     gap: min(4.653vw, 4.1875rem);
 }
-.home section.third-section .section-content h1 {
+.home section.third-section .section-content h2 {
     text-align: center;
     line-height: 187.5%;
-    font-size: clamp(var(--ts-h1-font-minimum-size), 2.431vw, 2.6rem);
+    font-size: clamp(var(--ts-h2-font-minimum-size), 2.431vw, 2.6rem);
     font-weight: 600;
     width: 72.0768%;
 }
-.home section.third-section .section-content .section-description h2 {
+.home section.third-section .section-content .section-description h3 {
     line-height: 187.5%;
-    font-size: clamp(var(--ts-h2-font-minimum-size), 2.083vw, 2.3rem);
+    font-size: clamp(var(--ts-h3-font-minimum-size), 2.083vw, 2.3rem);
     font-weight: 600;
 }
 .home section.third-section .section-content .section-description p {
@@ -136,8 +136,8 @@ body#home {
     align-items: center;
     gap: min(1.56rem, 1.733vw);
 }
-.home section.forth-section .section-content h1 {
-    font-size: clamp(var(--frs-h1-font-minimum-size), 2.083vw, 2.2rem);
+.home section.forth-section .section-content h2 {
+    font-size: clamp(var(--frs-h2-font-minimum-size), 2.083vw, 2.2rem);
     width: min(50rem, 55.556vw);
     line-height: 187.5%;
     text-align: center;
@@ -190,8 +190,8 @@ body#home {
     text-align: center;
     width: 42.8071%;
 }
-.home section.fifth-section .section-header h1 {
-    font-size: clamp(var(--ffs-h1-font-minimum-size), 2.083vw, 2.2rem);
+.home section.fifth-section .section-header h2 {
+    font-size: clamp(var(--ffs-h2-font-minimum-size), 2.083vw, 2.2rem);
     font-weight: bold;
     line-height: 187.5%;
 }
