@@ -1,0 +1,21 @@
+@media screen and (max-width: 1256px) {
+    .absolute { 
+        display: none;
+    }
+    body#home section.first-section div.section-content {
+        align-items: center;
+        justify-content: center;
+    }
+    body#home section.first-section .section-content .section-text {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    body#home section.first-section .section-left .section-text span   {
+        width: auto;
+    }
+    body#home section.first-section .section-content .section-text h1 {
+        width: 100%;
+    }
+}
