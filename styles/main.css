@@ -16,4 +16,4 @@
 @import './components/footer.css';
 @import './components/social-media-icon.css';
 @import './components/text-field.css';
-@import './utilities/mobile.css';
+@import './utilities/breakpoints.css';
